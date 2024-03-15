@@ -1,0 +1,35 @@
+.grid-section {
+    margin-top: 35px;
+}
+.row {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0 !important;
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+    }
+    &.row-grid-3 {
+        > div {
+            width: 33%;
+            @media screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+    }
+    .row-box {
+        margin: 15px;
+        padding: 25px;
+        background: #eaeaea;
+        display: flex;
+        flex-direction: column;
+        .link-button {
+            width: inherit;
+            margin-top: auto;
+            
+        }
+        p {
+            margin-bottom: 15px;
+        }
+    }
+}

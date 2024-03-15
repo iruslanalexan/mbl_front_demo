@@ -1,0 +1,161 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+	<div class="wrapper">
+		<div class="breadcrumbs">
+			<ul class="breadcrumbs-list">
+				<li class="breadcrumbs-item">
+					<a href="#" class="breadcrumbs-link">Главная</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a class="breadcrumbs-link">О компании</a>
+				</li>
+			</ul>
+		</div>
+		<h1 class="page-header">О компании</h1>
+		<nav class="page-subnav">
+			<ul class="page-subnav-list">
+				<li class="page-subnav-list-item">
+					<a class="page-subnav-link">О компании</a>
+				</li>
+				<li class="page-subnav-list-item">
+					<a href="/page-feedback.html" class="page-subnav-link">Отзывы</a>
+				</li>
+				<li class="page-subnav-list-item">
+					<a href="/page-faq.html" class="page-subnav-link">Вопрос-ответ</a>
+				</li>
+				<li class="page-subnav-list-item">
+					<a href="/page-contacts" class="page-subnav-link">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		<section class="promo-section promo-section--about full-width">
+			<picture class="full-width-picture">
+				<source srcset="img/about_top@2x.jpg 2x" />
+				<img src="img/about_top.jpg" />
+			</picture>
+			<div class="promo-description">
+				<p class="promo-section-header">themebel</p>
+				<p class="promo-section-text">Идейные соображения высшего порядка, а также постоянный количественный
+					рост и сфера нашей активности требуют определения и уточнения дальнейших </p>
+				<div class="promo-section-action"><a href="#" class="promo-section-link">Перейти в каталог</a></div>
+			</div>
+		</section>
+	</div>
+	<section class="page-section why-me">
+		<div class="wrapper">
+			<h2 class="h1 text-transform-none">Почему мы?</h2>
+			<div class="loyalty-benefits-block">
+				<div class="lb-row">
+					<div class="lb-item">
+						<h2 class="h1">1</h2>
+						<p>Компания более 80 лет на&nbsp;рынке</p>
+					</div>
+					<div class="lb-item">
+						<h2 class="h1">2</h2>
+						<p>Большой ассортимент мебели и материалов</p>
+					</div>
+					<div class="lb-item">
+						<h2 class="h1">3</h2>
+						<p>Высокая технологичность</p>
+					</div>
+					<div class="lb-item">
+						<h2 class="h1">4</h2>
+						<p>Собственный дизайн продукции</p>
+					</div>
+					<div class="lb-item">
+						<h2 class="h1">5</h2>
+						<p>Гарантия 18 месяцев</p>
+					</div>
+					<div class="lb-item">
+						<h2 class="h1">6</h2>
+						<p>Розничная сеть из 11 магазинов</p>
+					</div>
+				</div>
+			</div>
+			<div class="loayality-detail-grid">
+				<div class="loayality-detail-item">
+					<p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют
+						определения и уточнения соответствующий условий активизации.</p>
+				</div>
+				<div class="loayality-detail-item">
+					<p>Не следует, однако забывать, что реализация намеченных плановых заданий позволяет выполнять
+						важные задания по разработке дальнейших направлений развития.</p>
+				</div>
+				<div class="loayality-detail-item">
+					<p>Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей
+						деятельности позволяет оценить значение существенных финансовых и административных условий.</p>
+				</div>
+			</div>
+			<section class="promo-section full-width">
+				<picture class="promo-section-image full-width-picture">
+					<source srcset="img/why-we-banner@2x.jpg 2x" />
+					<img src="img/why-we-banner.jpg" />
+				</picture>
+				<div class="promo-description">
+					<h2 class="section-header section-header--width">Мы делаем всё, чтобы вы спали счастливо!</h2>
+					<p class="promo-section-text">Широкий ассортимент товаров для интерьерных решений от отечественных и
+						импортных производителей</p>
+				</div>
+			</section>
+
+		</div>
+	</section>
+	<section class="page-section">
+		<div class="wrapper">
+			<div class="checker-options checker-options--about">
+				<ul class="checker-options-list">
+					<li class="checker-options-item">
+						<div class="checker-options-desc">
+							<div>
+								<p class="checker-options-header">Дизайнеры</p>
+								<p class="checker-options-text">Повседневная практика показывает, что реализация
+									намеченных плановых заданий позволяет выполнять важные задания по разработке новых
+									предложений.</p>
+							</div>
+							<div class="checker-options-action"><a href="#" class="link">Дизайнерам</a></div>
+						</div>
+						<div class="checker-options-img">
+							<img src="img/checker-options1.jpg" srcset="img/checker-options1@2x.jpg 2x"
+								alt="Дизайнерам">
+						</div>
+					</li>
+					<li class="checker-options-item">
+						<div class="checker-options-desc">
+							<div>
+								<p class="checker-options-header">Склад</p>
+								<p class="checker-options-text">Равным образом новая модель организационной деятельности
+									в значительной степени обуславливает создание форм развития.</p>
+							</div>
+						</div>
+						<div class="checker-options-img">
+							<img src="img/checker-options2.jpg" srcset="img/checker-options2@2x.jpg 2x"
+								alt="Дизайнерам">
+						</div>
+					</li>
+					<li class="checker-options-item">
+						<div class="checker-options-desc">
+							<div>
+								<p class="checker-options-header">Доставка</p>
+								<p class="checker-options-text">Задача организации, в особенности же рамки и место
+									обучения кадров требуют от нас анализа позиций, занимаемых участниками в отношении
+									поставленных задач.</p>
+							</div>
+							<div class="checker-options-action"><a href="#" class="link">Доставка и оплата</a></div>
+						</div>
+						<div class="checker-options-img">
+							<img src="img/checker-options3.jpg" srcset="img/checker-options3@2x.jpg 2x"
+								alt="Дизайнерам">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</main>
+
+{% endblock %}

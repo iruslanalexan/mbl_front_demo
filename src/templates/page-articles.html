@@ -1,0 +1,239 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+	<div class="wrapper">
+		<div class="breadcrumbs">
+			<ul class="breadcrumbs-list">
+				<li class="breadcrumbs-item">
+					<a href="#" class="breadcrumbs-link">Главная</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a class="breadcrumbs-link">Статьи</a>
+				</li>
+			</ul>
+		</div>
+		<h1 class="page-header">Статьи</h1>
+		<div class="filter-arcticles flex-container">
+			<div>
+				<span>Уход за мебелью</span>
+				<select name="article-first" id="article-first" class="article-select">
+					<option value="Средства">Средства</option>
+					<option value="Важные правила">Важные правила</option>
+					<option value="Советы">Советы</option>
+					<option value="Уход за тканями">Уход за тканями</option>
+					<option value="Уход за шкафами">Уход за шкафами</option>
+				</select>
+			</div>
+			<div>
+				<span>Идеи интерьеров</span>
+				<select name="article-second" id="article-second" class="article-select">
+					<option value="Стиль контемпорари">Стиль контемпорари</option>
+					<option value="Скандинавский стиль">Скандинавский стиль</option>
+					<option value="Стиль лофт">Стиль лофт</option>
+					<option value="Стиль минимализм">Стиль минимализм</option>
+					<option value="Хай-тек">Хай-тек</option>
+					<option value="Функционализм">Функционализм</option>
+					<option value="Модерн">Модерн</option>
+					<option value="Эко-стиль">Эко-стиль</option>
+				</select>
+			</div>
+			<div>
+				<span>Выбор мебели</span>
+				<select name="article-third" id="article-third" class="article-select">
+					<option value="Типы мебели">Типы мебели</option>
+					<option value="Полезные советы">Полезные советы</option>
+					<option value="Список фирм мебели">Список фирм мебели</option>
+					<option value="Мягкая мебель">Мягкая мебель</option>
+					<option value="Выбор мебели для ребенка">Выбор мебели для ребенка</option>
+					<option value="Встроенная">Встроенная</option>
+					<option value="Корпусная">Корпусная</option>
+				</select>
+			</div>
+		</div>
+		<section class="grid-section article-grid">
+			<div class="row-grid-3 container-flex">
+				<div>
+					<div class="overflow-container">
+						<img src="img/benefit-img1.jpg" alt="">
+						<div class="overflow-section">
+							<div class="badget">Мебель в интерьере</div>
+							<h3><a href="#">Название статьи</a></h3>
+						</div>
+					</div>
+					<div class="article-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus obcaecati hic ratione? Atque, hic repellat!</p>
+						<p>23.05.2020</p>
+						<a href="#" class="link-button">Подробнее</a>
+					</div>
+				</div>
+				<div>
+					<div class="overflow-container">
+						<img src="img/benefit-img2.jpg" alt="">
+						<div class="overflow-section">
+							<div class="badget">Полезно знать</div>
+							<h3><a href="#">Название статьи</a></h3>
+						</div>
+					</div>
+					<div class="article-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus obcaecati hic ratione?
+							Atque, hic
+							repellat!</p>
+						<p>23.05.2020</p>
+						<a href="#" class="link-button">Подробнее</a>
+					</div>
+				</div>
+				<div>
+					<div class="overflow-container">
+						<img src="img/benefit-img3.jpg" alt="">
+						<div class="overflow-section">
+							<div class="badget">Важные советы</div>
+							<h3><a href="#">Название статьи</a></h3>
+						</div>
+					</div>
+					<div class="article-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus obcaecati hic ratione? Atque, hic repellat!</p>
+						<p>23.05.2020</p>
+						<a href="#" class="link-button">Подробнее</a>
+					</div>
+				</div>
+				<div>
+					<div class="overflow-container">
+						<img src="img/benefit-img1.jpg" alt="">
+						<div class="overflow-section">
+							<div class="badget">Мебель в интерьере</div>
+							<h3><a href="#">Название статьи</a></h3>
+						</div>
+					</div>
+					<div class="article-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus obcaecati hic ratione? Atque, hic repellat!</p>
+						<p>23.05.2020</p>
+						<a href="#" class="link-button">Подробнее</a>
+					</div>
+				</div>
+				<div>
+					<div class="overflow-container">
+						<img src="img/benefit-img2.jpg" alt="">
+						<div class="overflow-section">
+							<div class="badget">Полезно знать</div>
+							<h3><a href="#">Название статьи</a></h3>
+						</div>
+					</div>
+					<div class="article-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus obcaecati hic ratione? Atque, hic repellat!</p>
+						<p>23.05.2020</p>
+						<a href="#" class="link-button">Подробнее</a>
+					</div>
+				</div>
+				<div>
+					<div class="overflow-container">
+						<img src="img/benefit-img3.jpg" alt="">
+						<div class="overflow-section">
+							<div class="badget">Важные советы</div>
+							<h3><a href="#">Название статьи</a></h3>
+						</div>
+					</div>
+					<div class="article-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus obcaecati hic ratione? Atque, hic repellat!</p>
+						<p>23.05.2020</p>
+						<a href="#" class="link-button">Подробнее</a>
+					</div>
+				</div>
+				<div>
+					<div class="overflow-container">
+						<img src="img/benefit-img1.jpg" alt="">
+						<div class="overflow-section">
+							<div class="badget">Мебель в интерьере</div>
+							<h3><a href="#">Название статьи</a></h3>
+						</div>
+					</div>
+					<div class="article-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus obcaecati hic ratione? Atque, hic repellat!</p>
+						<p>23.05.2020</p>
+						<a href="#" class="link-button">Подробнее</a>
+					</div>
+				</div>
+				<div>
+					<div class="overflow-container">
+						<img src="img/benefit-img2.jpg" alt="">
+						<div class="overflow-section">
+							<div class="badget">Полезно знать</div>
+							<h3><a href="#">Название статьи</a></h3>
+						</div>
+					</div>
+					<div class="article-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus obcaecati hic ratione? Atque, hic repellat!</p>
+						<p>23.05.2020</p>
+						<a href="#" class="link-button">Подробнее</a>
+					</div>
+				</div>
+				<div>
+					<div class="overflow-container">
+						<img src="img/benefit-img3.jpg" alt="">
+						<div class="overflow-section">
+							<div class="badget">Важные советы</div>
+							<h3><a href="#">Название статьи</a></h3>
+						</div>
+					</div>
+					<div class="article-content">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus obcaecati hic ratione? Atque, hic repellat!</p>
+						<p>23.05.2020</p>
+						<a href="#" class="link-button">Подробнее</a>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<div class="filter-results-refresh section-margin">
+			<a href="#">{{mixins.icon('refresh')}}</a>
+		</div>
+		<section class="page-section">
+			<div class="form-row">
+				<ul class="pagination-list">
+					<li class="pagination-item pagination-item--prev"><a href="#"
+							class="pagination-action pagination-action--inactive">{{mixins.icon('arrow_big_left')}}</a>
+					</li>
+					<li class="pagination-item"><a href="#" class="pagination-link pagination-link--current">1</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+					<li class="pagination-item">...</li>
+					<li class="pagination-item"><a href="#" class="pagination-link">13</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">14</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">15</a></li>
+					<li class="pagination-item pagination-item--next"><a href="#"
+							class="pagination-action">{{mixins.icon('arrow_big_right')}}</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="page-section">
+			<div class="detailed-info-block info-articles">
+				<form action="">
+					<div class="f-col">
+						<p>Подпишитесь на рассылку информационных материалов!</p>
+					</div>
+					<div class="f-col">
+						<div class="form-row">
+							<input class="form-input" type="text" name="email" id="email" placeholder="E-mail">
+							<div class="form-checkbox  form-row--checkbox">
+								<input type="checkbox" name="approve-check4" id="approve-check4">
+								<label for="approve-check4">я ознакомлен и согласен <a href="#" class="link-button">«C
+										условиями сбора и обработки персональных данных».</a></label>
+							</div>
+						</div>
+					</div>
+					<div class="f-col">
+						<a href="#" class="button"><span class="button-text">Подписаться</span><svg data-text="Подписаться" width="0" height="0"></svg></a>
+					</div>
+				</form>
+			</div>
+		</section>
+
+	</div>
+
+</main>
+
+{% endblock %}

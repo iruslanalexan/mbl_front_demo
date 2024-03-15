@@ -1,0 +1,898 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+	<div class="wrapper">
+		{% set links = [
+        { title: 'Главная', href: '/' },
+        { title: 'Диваны и кресла', href: '/' },
+        { title: 'Угловые диваны', href: '/' },
+        { title: 'Диван Copenhagen', href: '' }
+    ] %}
+		{% include './partials/_breadcrumbs.html' %}
+		<section class="page-section">
+			<article class="product">
+				<div class="p-row p-header hidden-desktop">
+					<h2>Диван Copenhagen угловой, с левым углом</h2>
+				</div>
+				<div class="p-left">
+					<ul class="p-tags">
+						<li class="red">Акция</li>
+						<li class="is-hidden js-users-online">Сейчас этот товар смотрит 17 человек</li>
+					</ul>
+					<div class="p-icons">
+						<button class="button-icon is-active js-add-to-fav"><i class="icon-heart"></i></button>
+						<button class="button-icon js-add-to-fav">
+							{{mixins.icon('compare')}}
+							<span class="button-icon-text" data-on="В сравнении" data-off="Добавить в сравнение">Добавить в сравнение</span>
+						</button>
+					</div>
+					<div class="p-image">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><a href="./img/product1.jpg" data-fancybox="gallery"><img src="./img/product1.jpg"></a></div>
+								<div class="swiper-slide"><a href="./img/product1.jpg" data-fancybox="gallery"><img src="./img/product1.jpg"></a></div>
+								<div class="swiper-slide"><a href="./img/product1.jpg" data-fancybox="gallery"><img src="./img/product1.jpg"></a></div>
+								<div class="swiper-slide"><a href="./img/product1.jpg" data-fancybox="gallery"><img src="./img/product1.jpg"></a></div>
+								<div class="swiper-slide"><a href="./img/product1.jpg" data-fancybox="gallery"><img src="./img/product1.jpg"></a></div>
+								<div class="swiper-slide"><a href="./img/product1.jpg" data-fancybox="gallery"><img src="./img/product1.jpg"></a></div>
+							</div>
+						</div>
+					</div>
+					<div class="p-gallery">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide active"><img src="./img/product1.jpg"></div>
+								<div class="swiper-slide"><img src="./img/product1.jpg"></div>
+								<div class="swiper-slide"><img src="./img/product1.jpg"></div>
+								<div class="swiper-slide"><img src="./img/product1.jpg"></div>
+								<div class="swiper-slide"><img src="./img/product1.jpg"></div>
+								<div class="swiper-slide"><img src="./img/product1.jpg"></div>
+							</div>
+						</div>
+						<div class="swiper-button-prev">{{mixins.icon('arrow_big_left')}}</div>
+						<div class="swiper-button-next">{{mixins.icon('arrow_big_right')}}</div>
+					</div>
+				</div>
+				<div class="p-right">
+					<div class="p-row p-header hidden-mobile">
+						<h2>Диван Copenhagen угловой, с левым углом</h2>
+					</div>
+					<div class="p-row p-stars">
+						<div class="ps-stars js-stars" data-rating="2" data-readonly="1"></div>
+						<a href="#" class="link-button">4 отзыва</a>
+					</div>
+					<div class="p-row p-stock">
+						<span class="ps-red">-10%</span>
+						<span class="ps-crossed">25 900 р.</span>
+					</div>
+					<div class="p-row p-price">
+						<h2>24 900 р.</h2>
+					</div>
+					<div class="p-row p-bay">
+						<a data-fancybox href="#add-to-basket" class="button"><span class="button-text">Купить</span><svg data-text="Купить" width="0" height="0"></svg></a>
+					</div>
+					<div class="p-row p-bonuses">
+						<span>Бонусная программа <b>89</b> баллов <br>на счёт</span>
+					</div>
+					<div class="p-row p-comments">
+						<span>Пункт выдачи в <a href="#popup-pickup" data-fancybox><b>Хабаровске</b></a></span>
+					</div>
+					<div class="p-row p-comments">
+						<span>С доставкой через 30 дней до <b>Владивостока</b></span>
+					</div>
+					<div class="p-row p-variants p-1-2-block">
+						<div class="p-col p-header">
+							<h4>Вариант</h4>
+						</div>
+						<div class="p-col">
+							<div class="pv-links">
+								<a href="#" class="link-button active">С левым углом</a>
+								<a href="#" class="link-button">С правым углом</a>
+							</div>
+						</div>
+					</div>
+					<div class="p-row p-color p-1-2-block">
+						<div class="p-col p-header">
+							<h4>Цвет</h4>
+						</div>
+						<div class="p-col">
+							<div class="p-row p-colors">
+								<label>
+									<input type="radio" name="color-1" checked>
+									<span style="background-color: #CB7878;"></span>
+								</label>
+								<label>
+									<input type="radio" name="color-1">
+									<span style="background-color: #E9E9E9;"></span>
+								</label>
+								<label>
+									<input type="radio" name="color-1">
+									<span style="background-color: #B1A5D5;"></span>
+								</label>
+								<label>
+									<input type="radio" name="color-1">
+									<span style="background-color: #9E7320;"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="p-row p-characteristics-header">
+						<h4>Основные характеристики</h4>
+					</div>
+					<div class="p-col p-characteristics">
+						<div class="p-row">
+							<div class="p-col"><span>Материал каркаса</span></div>
+							<div class="p-col pc-value"><span>Массив гевеи</span></div>
+						</div>
+						<div class="p-row">
+							<div class="p-col"><span>Материал обивки</span></div>
+							<div class="p-col pc-value"><span>Ткань</span></div>
+						</div>
+						<div class="p-row">
+							<div class="p-col"><span>Материал ножек</span></div>
+							<div class="p-col pc-value"><span>Массив гевеи</span></div>
+						</div>
+						<div class="p-row">
+							<div class="p-col"><span>Механизм</span></div>
+							<div class="p-col pc-value"><span>Бабочка</span></div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<div class="tabs js-tabs product-tabs">
+				<ul class="tabs-list">
+					<li class="tabs-item">
+						<a href="#tab1" class="tabs-link js-tabs-trigger active">Описание</a>
+					</li>
+					<li class="tabs-item">
+						<a href="#tab2" class="tabs-link js-tabs-trigger">Механизм</a>
+					</li>
+					<li class="tabs-item">
+						<a href="#tab3" class="tabs-link js-tabs-trigger">Отзывы</a>
+					</li>
+					<li class="tabs-item">
+						<a href="#tab4" class="tabs-link js-tabs-trigger">Доставка и оплата</a>
+					</li>
+					<li class="tabs-item">
+						<a href="#tab5" class="tabs-link js-tabs-trigger">Почему The Mebel</a>
+					</li>
+				</ul>
+				<section class="tabs-content js-tabs-content active" id="tab1">
+					<div class="page-section styled-content">
+						<div class="p-row p-1-1-block">
+							<div class="p-col">
+								<p>Не следует, однако забывать, что консультация с широким активом позволяет оценить
+									значение соответствующий условий активизации. Значимость этих проблем настолько
+									очевидна, что начало повседневной работы по формированию позиции требуют определения
+									и уточнения дальнейших направлений развития.Не следует, однако забывать, что
+									консультация с широким активом позволяет оценить значение соответствующий условий
+									активизации. Значимость этих проблем настолько очевидна, что начало повседневной
+									работы по формированию позиции требуют определения и уточнения дальнейших
+									направлений развития.</p>
+							</div>
+							<div class="p-col">
+								<img src="./img/product1-description.jpg" alt="">
+							</div>
+						</div>
+						<h2 class="underlined">Характеристики</h2>
+						<div class="p-row p-1-1-block product-characteristics">
+							<div class="p-col">
+								<div class="p-row p-1-1-block">
+									<div class="p-col"><span>Количество мест</span></div>
+									<div class="p-col"><span><b>4</b></span></div>
+								</div>
+								<div class="p-row p-1-1-block">
+									<div class="p-col"><span>Количество в упаковке</span></div>
+									<div class="p-col"><span><b>2</b></span></div>
+								</div>
+								<div class="p-row p-1-1-block">
+									<div class="p-col"><span>Материал каркаса</span></div>
+									<div class="p-col"><span><b>Массив гевеи</b></span></div>
+								</div>
+								<div class="p-row p-1-1-block">
+									<div class="p-col"><span>Материал обивки</span></div>
+									<div class="p-col"><span><b>Ткань</b></span></div>
+								</div>
+								<div class="p-row p-1-1-block">
+									<div class="p-col"><span>Цвет каркаса</span></div>
+									<div class="p-col"><span><b>Cappuccino</b></span></div>
+								</div>
+								<div class="p-row p-1-1-block">
+									<div class="p-col"><span>Цвет обивки</span></div>
+									<div class="p-col"><span><b>Бежевый</b></span></div>
+								</div>
+								<div class="p-row p-1-1-block">
+									<div class="p-col"><span>Материал ножек</span></div>
+									<div class="p-col"><span><b>Массив гевеи</b></span></div>
+								</div>
+								<div class="p-row p-1-1-block">
+									<div class="p-col"><span>Цвет ножек</span></div>
+									<div class="p-col"><span><b>Cappuccino</b></span></div>
+								</div>
+							</div>
+							<div class="p-col product-options">
+								<h3>Дополнительные опции</h3>
+								<div class="p-row">
+									<span><b>Название опции</b></span>
+									<span><b>Название опции</b></span>
+									<span><b>Название опции</b></span>
+								</div>
+								<h3>Другой цвет</h3>
+								<div class="p-row p-colors">
+									<label>
+										<input type="radio" name="color-2" checked>
+										<span style="background-color: #CB7878;"></span>
+									</label>
+									<label>
+										<input type="radio" name="color-2">
+										<span style="background-color: #E9E9E9;"></span>
+									</label>
+									<label>
+										<input type="radio" name="color-2">
+										<span style="background-color: #B1A5D5;"></span>
+									</label>
+									<label>
+										<input type="radio" name="color-2">
+										<span style="background-color: #9E7320;"></span>
+									</label>
+								</div>
+								<h3>Другая обивка</h3>
+								<div class="p-row">
+									<div class="p-col">
+										<h4>Кожзам</h4>
+										<div class="p-row p-colors">
+											<label>
+												<input type="radio" name="color-3" checked>
+												<span style="background-color: #CB7878;"></span>
+											</label>
+											<label>
+												<input type="radio" name="color-3">
+												<span style="background-color: #E9E9E9;"></span>
+											</label>
+											<label>
+												<input type="radio" name="color-3">
+												<span style="background-color: #B1A5D5;"></span>
+											</label>
+										</div>
+									</div>
+									<div class="p-col">
+										<h4>Велюр</h4>
+										<div class="p-row p-colors">
+											<label>
+												<input type="radio" name="color-4" checked>
+												<span style="background-color: #CB7878;"></span>
+											</label>
+											<label>
+												<input type="radio" name="color-4">
+												<span style="background-color: #E9E9E9;"></span>
+											</label>
+											<label>
+												<input type="radio" name="color-4">
+												<span style="background-color: #B1A5D5;"></span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="button button-with-icon"><span class="icon-config"></span>Изменить
+							конфигурацию</a>
+					</div>
+					<div class="page-section">
+						<div class="cat-in cat-in--video">
+							<div class="wrapper">
+								<div class="cat-in-content full-width">
+									<div class="cat-in-info">
+										<h2 class="section-header">Механизм</h2>
+										<p class="cat-in-text">Широкий ассортимент товаров для интерьерных решений от отечественных и
+											импортных производителей</p>
+										<div class="cat-in-action"><a href="#">Подробнее</a></div>
+									</div>
+									<div class="video-container video">
+										<button class="play-button" js-play-next-video></button>
+										<video controls="" playsinline>
+											<source src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.webm"
+												type="video/webm">
+											<source src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.mp4"
+												type="video/mp4">
+										</video>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="tabs-content js-tabs-content" id="tab2">
+					<div class="styled-content product-video">
+						<div class="p-row p-3-2-block">
+							<div class="p-col">
+								<p>Равным образом начало повседневной работы по формированию позиции требуют определения
+									и уточнения системы обучения кадров, соответствует насущным потребностям</p>
+							</div>
+							<div class="p-col video">
+								<button class="play-button" js-play-next-video></button>
+								<video poster="/img/mechanism-poster.jpg" playsinline>
+									<source src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.mp4">
+								</video>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="tabs-content js-tabs-content" id="tab3">
+					<div class="styled-content">
+						<div class="p-row p-comment-item p-1-4-2-block">
+							<div class="review-slider">
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="review-slider__item">
+												<div class="p-col comment-name">
+													<h2>Николай</h2>
+													<span>15 мая 2018</span>
+													<div class="p-row p-stars small-stars">
+														<div class="ps-stars js-stars" data-rating="3" data-readonly="1"></div>
+													</div>
+												</div>
+												<div class="p-col">
+													<div class="comment-block">
+														<h3>Плюсы</h3>
+														<p>Значимость этих проблем настолько очевидна, что постоянный количественный рост и
+															сфера нашей активности требуют от нас анализа систем массового участия.</p>
+													</div>
+													<div class="comment-block">
+														<h3>Минусы</h3>
+														<p>Таким образом сложившаяся структура организации обеспечивает широкому кругу
+															(специалистов) участие в формировании соответствующий условий активизации.</p>
+													</div>
+													<div class="comment-block">
+														<h3>Отзывы</h3>
+														<p>Разнообразный и богатый опыт сложившаяся структура организации требуют от нас
+															анализа соответствующий условий активизации. Повседневная практика показывает,
+															что сложившаяся структура организации требуют от нас анализа модели развития.
+															Разнообразный и богатый опыт начало повседневной работы по формированию позиции
+															способствует подготовки и реализации позиций, занимаемых участниками в отношении
+															поставленных задач.</p>
+													</div>
+													<div class="p-comment-attach comment-block">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="review-slider__item">
+												<div class="p-col comment-name">
+													<h2>Николай</h2>
+													<span>15 мая 2018</span>
+													<div class="p-row p-stars small-stars">
+														<div class="ps-stars js-stars" data-rating="3" data-readonly="1"></div>
+													</div>
+												</div>
+												<div class="p-col">
+													<div class="comment-block">
+														<h3>Плюсы</h3>
+														<p>Значимость этих проблем настолько очевидна, что постоянный количественный рост и
+															сфера нашей активности требуют от нас анализа систем массового участия.</p>
+													</div>
+													<div class="comment-block">
+														<h3>Минусы</h3>
+														<p>Таким образом сложившаяся структура организации обеспечивает широкому кругу
+															(специалистов) участие в формировании соответствующий условий активизации.</p>
+													</div>
+													<div class="comment-block">
+														<h3>Отзывы</h3>
+														<p>Разнообразный и богатый опыт сложившаяся структура организации требуют от нас
+															анализа соответствующий условий активизации. Повседневная практика показывает,
+															что сложившаяся структура организации требуют от нас анализа модели развития.
+															Разнообразный и богатый опыт начало повседневной работы по формированию позиции
+															способствует подготовки и реализации позиций, занимаемых участниками в отношении
+															поставленных задач.</p>
+													</div>
+													<div class="p-comment-attach comment-block">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="review-slider__item">
+												<div class="p-col comment-name">
+													<h2>Николай</h2>
+													<span>15 мая 2018</span>
+													<div class="p-row p-stars small-stars">
+														<div class="ps-stars js-stars" data-rating="3" data-readonly="1"></div>
+													</div>
+												</div>
+												<div class="p-col">
+													<div class="comment-block">
+														<h3>Плюсы</h3>
+														<p>Значимость этих проблем настолько очевидна, что постоянный количественный рост и
+															сфера нашей активности требуют от нас анализа систем массового участия.</p>
+													</div>
+													<div class="comment-block">
+														<h3>Минусы</h3>
+														<p>Таким образом сложившаяся структура организации обеспечивает широкому кругу
+															(специалистов) участие в формировании соответствующий условий активизации.</p>
+													</div>
+													<div class="comment-block">
+														<h3>Отзывы</h3>
+														<p>Разнообразный и богатый опыт сложившаяся структура организации требуют от нас
+															анализа соответствующий условий активизации. Повседневная практика показывает,
+															что сложившаяся структура организации требуют от нас анализа модели развития.
+															Разнообразный и богатый опыт начало повседневной работы по формированию позиции
+															способствует подготовки и реализации позиций, занимаемых участниками в отношении
+															поставленных задач.</p>
+													</div>
+													<div class="p-comment-attach comment-block">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="review-slider__item">
+												<div class="p-col comment-name">
+													<h2>Николай</h2>
+													<span>15 мая 2018</span>
+													<div class="p-row p-stars small-stars">
+														<div class="ps-stars js-stars" data-rating="3" data-readonly="1"></div>
+													</div>
+												</div>
+												<div class="p-col">
+													<div class="comment-block">
+														<h3>Плюсы</h3>
+														<p>Значимость этих проблем настолько очевидна, что постоянный количественный рост и
+															сфера нашей активности требуют от нас анализа систем массового участия.</p>
+													</div>
+													<div class="comment-block">
+														<h3>Минусы</h3>
+														<p>Таким образом сложившаяся структура организации обеспечивает широкому кругу
+															(специалистов) участие в формировании соответствующий условий активизации.</p>
+													</div>
+													<div class="comment-block">
+														<h3>Отзывы</h3>
+														<p>Разнообразный и богатый опыт сложившаяся структура организации требуют от нас
+															анализа соответствующий условий активизации. Повседневная практика показывает,
+															что сложившаяся структура организации требуют от нас анализа модели развития.
+															Разнообразный и богатый опыт начало повседневной работы по формированию позиции
+															способствует подготовки и реализации позиций, занимаемых участниками в отношении
+															поставленных задач.</p>
+													</div>
+													<div class="p-comment-attach comment-block">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="review-slider__item">
+												<div class="p-col comment-name">
+													<h2>Николай</h2>
+													<span>15 мая 2018</span>
+													<div class="p-row p-stars small-stars">
+														<div class="ps-stars js-stars" data-rating="3" data-readonly="1"></div>
+													</div>
+												</div>
+												<div class="p-col">
+													<div class="comment-block">
+														<h3>Плюсы</h3>
+														<p>Значимость этих проблем настолько очевидна, что постоянный количественный рост и
+															сфера нашей активности требуют от нас анализа систем массового участия.</p>
+													</div>
+													<div class="comment-block">
+														<h3>Минусы</h3>
+														<p>Таким образом сложившаяся структура организации обеспечивает широкому кругу
+															(специалистов) участие в формировании соответствующий условий активизации.</p>
+													</div>
+													<div class="comment-block">
+														<h3>Отзывы</h3>
+														<p>Разнообразный и богатый опыт сложившаяся структура организации требуют от нас
+															анализа соответствующий условий активизации. Повседневная практика показывает,
+															что сложившаяся структура организации требуют от нас анализа модели развития.
+															Разнообразный и богатый опыт начало повседневной работы по формированию позиции
+															способствует подготовки и реализации позиций, занимаемых участниками в отношении
+															поставленных задач.</p>
+													</div>
+													<div class="p-comment-attach comment-block">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+														<img src="./img/product1.jpg" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-button-prev">{{mixins.icon('arrow_big_left')}}</div>
+								<div class="swiper-button-next">{{mixins.icon('arrow_big_right')}}</div>
+							</div>
+							<div class="p-col">
+								<a href="#" class="link-button">Все отзывы</a>
+							</div>
+						</div>
+						<div class="p-row p-1-2-block p-send-comment">
+							<div class="p-col">
+								<h3>Оставьте отзыв</h3>
+								<span>Ваш отзыв поможет кому-то сделать<br>выбор. Спасибо, что делитесь опытом!</span>
+							</div>
+							<div class="p-col">
+								<a href="#add-review" class="button" data-fancybox><span class="button-text">Оставить отзыв</span><svg data-text="Оставить отзыв" width="0" height="0"></svg></a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="tabs-content js-tabs-content" id="tab4">
+					<div class="styled-content">
+						<p>Не следует, однако забывать, что консультация с широким активом позволяет оценить значение
+							соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало
+							повседневной работы по формированию позиции требуют определения и уточнения дальнейших
+							направлений развития.Не следует, однако забывать, что консультация с широким активом
+							позволяет оценить значение соответствующий условий активизации.</p>
+						<h2>Условия и доставка</h2>
+						<p>Идейные соображения высшего порядка, а также консультация с широким активом способствует
+							подготовки и реализации системы обучения кадров, соответствует насущным потребностям.
+							Товарищи! реализация намеченных плановых заданий способствует подготовки и реализации
+							системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем
+							настолько очевидна, что консультация с широким активом в значительной степени обуславливает
+							создание существенных финансовых и административных условий.</p>
+						<table class="styled-table">
+							<thead>
+								<tr>
+									<th>Вид товара</th>
+									<th>Стоимость доставки</th>
+									<th>Стоимость сборки</th>
+									<th>Стоимость установки</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Название категории</td>
+									<td>300 Р</td>
+									<td>300 Р</td>
+									<td>300 Р</td>
+								</tr>
+								<tr>
+									<td>Название категории</td>
+									<td>300 Р</td>
+									<td>300 Р</td>
+									<td>300 Р</td>
+								</tr>
+								<tr>
+									<td>Название категории</td>
+									<td>300 Р</td>
+									<td>300 Р</td>
+									<td>300 Р</td>
+								</tr>
+								<tr>
+									<td>Название категории</td>
+									<td>300 Р</td>
+									<td>300 Р</td>
+									<td>300 Р</td>
+								</tr>
+								<tr>
+									<td>Название категории <br>с&nbsp;очень длинным <br>названием</td>
+									<td>300 Р</td>
+									<td>300 Р</td>
+									<td>300 Р</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="lined-block p-row p-1-2-block">
+							<div class="p-col benefits-horizontal">
+								<div class="p-row">
+									<img src="./img/box.svg" alt="">
+									<span>Почтовая доставка<br>по Росиси</span>
+								</div>
+								<div class="p-row">
+									<img src="./img/truck.svg" alt="">
+									<span>Транспортная<br>компания</span>
+								</div>
+							</div>
+							<div class="p-col">
+								<p>Разнообразный и богатый опыт консультация с широким активом позволяет выполнять
+									важные задания по разработке позиций, занимаемых участниками в отношении
+									поставленных задач. Идейные соображения высшего порядка, а также дальнейшее развитие
+									различных форм деятельности позволяет оценить значение систем массового участия.
+									Задача организации, в особенности же постоянное информационно-пропагандистское
+									обеспечение нашей деятельности требуют определения и уточнения модели развития.
+									Таким образом реализация намеченных плановых заданий позволяет выполнять важные
+									задания по разработке новых предложений. </p>
+							</div>
+						</div>
+						<h2>Варианты оплаты</h2>
+						<p>С другой стороны постоянный количественный рост и сфера нашей активности позволяет оценить
+							значение направлений прогрессивного развития. Значимость этих проблем настолько очевидна,
+							что начало повседневной работы по формированию позиции способствует подготовки и реализации
+							систем массового участия. Идейные соображения высшего порядка, а также сложившаяся структура
+							организации способствует подготовки и реализации позиций, занимаемых участниками в отношении
+							поставленных задач. Повседневная практика показывает, что дальнейшее развитие различных форм
+							деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых
+							предложений</p>
+						<div class="lined-block p-row">
+							<div class="p-col benefits-horizontal">
+								<div class="p-row p-1-2-block">
+									<div class="p-col">
+										<div class="p-row">
+											<img src="./img/money.svg" alt="">
+											<span>Оплата наличными</span>
+										</div>
+									</div>
+									<div class="p-col">
+										<p>Разнообразный и богатый опыт консультация с широким активом позволяет
+											выполнять важные задания по разработке позиций, занимаемых участниками в
+											отношении поставленных задач. Идейные соображения высшего порядка, а также
+											дальнейшее развитие различных форм деятельности позволяет оценить значение
+											систем массового участия.</p>
+									</div>
+								</div>
+								<div class="p-row p-1-2-block">
+									<div class="p-col">
+										<div class="p-row">
+											<img src="./img/credit-card.svg" alt="">
+											<span>Оплата банковской<br>картой онлайн</span>
+										</div>
+									</div>
+									<div class="p-col">
+										<p>Разнообразный и богатый опыт консультация с широким активом позволяет
+											выполнять важные задания по разработке позиций, занимаемых участниками в
+											отношении поставленных задач. Идейные соображения высшего порядка, а также
+											дальнейшее развитие различных форм деятельности позволяет оценить значение
+											систем массового участия.</p>
+									</div>
+								</div>
+								<div class="p-row p-1-2-block">
+									<div class="p-col">
+										<div class="p-row">
+											<img src="./img/list.svg" alt="">
+											<span>Выставление счета</span>
+										</div>
+									</div>
+									<div class="p-col">
+										<p>Разнообразный и богатый опыт консультация с широким активом позволяет
+											выполнять важные задания по разработке позиций, занимаемых участниками в
+											отношении поставленных задач. Идейные соображения высшего порядка, а также
+											дальнейшее развитие различных форм деятельности позволяет оценить значение
+											систем массового участия.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="tabs-content js-tabs-content" id="tab5">
+					<div class="styled-content">
+						<p>Не следует, однако забывать, что консультация с широким активом позволяет оценить значение
+							соответствующий условий активизации. Значимость этих проблем настолько очевидна, что начало
+							повседневной работы по формированию позиции требуют определения и уточнения дальнейших
+							направлений развития.Не следует, однако забывать, что консультация с широким активом
+							позволяет оценить значение соответствующий условий активизации.</p>
+						<div class="p-row benefits">
+							<div class="p-col">
+								<img src="./img/clock.svg" alt="">
+								<span>Быстрые<br>строки</span>
+							</div>
+							<div class="p-col">
+								<img src="./img/profits.svg" alt="">
+								<span>Экономия<br>на 20%</span>
+							</div>
+							<div class="p-col">
+								<img src="./img/quality.svg" alt="">
+								<span>Высокие стандарты<br>качества</span>
+							</div>
+							<div class="p-col">
+								<img src="./img/garanty.svg" alt="">
+								<span>Гарантия<br>и сервис</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+	</div>
+	<section class="page-section">
+		<div class="wrapper cards-gallery">
+			<h2 class="section-header">Другие варианты</h2>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide active">
+						{% include "partials/_cards_3col.html" %}
+					</div>
+					<div class="swiper-slide">
+						{% include "partials/_cards_3col.html" %}
+					</div>
+					<div class="swiper-slide">
+						{% include "partials/_cards_3col.html" %}
+					</div>
+				</div>
+				<div class="swiper-button-prev">{{mixins.icon('arrow_big_left')}}</div>
+				<div class="swiper-button-next">{{mixins.icon('arrow_big_right')}}</div>
+			</div>
+		</div>
+	</section>
+	<section class="page-section no-margin-section">
+		<div class="wrapper cards-gallery">
+			<h2 class="section-header">С этим товаром покупают</h2>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide active">
+						{% include "partials/_cards_3col.html" %}
+					</div>
+					<div class="swiper-slide">
+						{% include "partials/_cards_3col.html" %}
+					</div>
+					<div class="swiper-slide">
+						{% include "partials/_cards_3col.html" %}
+					</div>
+				</div>
+				<div class="swiper-button-prev">{{mixins.icon('arrow_big_left')}}</div>
+				<div class="swiper-button-next">{{mixins.icon('arrow_big_right')}}</div>
+			</div>
+		</div>
+	</section>
+	<section class="page-section no-margin-section">
+		<div class="wrapper cards-gallery">
+			<h2 class="section-header">Вас заинтересовало 8 товаров</h2>
+			<div class="cards-gallery-all">
+				<a href="#">История просмотров</a>
+			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide active">
+						{% include "partials/_cards_3col.html" %}
+					</div>
+					<div class="swiper-slide">
+						{% include "partials/_cards_3col.html" %}
+					</div>
+					<div class="swiper-slide">
+						{% include "partials/_cards_3col.html" %}
+					</div>
+				</div>
+				<div class="swiper-button-prev">{{mixins.icon('arrow_big_left')}}</div>
+				<div class="swiper-button-next">{{mixins.icon('arrow_big_right')}}</div>
+			</div>
+		</div>
+	</section>
+	<div class="wrapper">
+		<section class="page-section">
+			<h2 class="section-header">Хотите посмотреть товар в магазине? Приезжайте в гости!</h2>
+			<p class="section-header-text">Приезжайте в наши просторные магазины и убедитесь сами, что наша мебель
+				действительно стильная и удобная.</p>
+			<div class="carousel">
+				<div class="swiper-button-prev">{{mixins.icon('arrow_big_left')}}</div>
+				<div class="swiper-button-next">{{mixins.icon('arrow_big_right')}}</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll1.jpg"
+									srcset="img/img_scroll1@2x.jpg 2x, img/img_scroll1@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll2.jpg"
+									srcset="img/img_scroll2@2x.jpg 2x, img/img_scroll2@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll3.jpg"
+									srcset="img/img_scroll3@2x.jpg 2x, img/img_scroll3@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll1.jpg"
+									srcset="img/img_scroll1@2x.jpg 2x, img/img_scroll1@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll1.jpg"
+									srcset="img/img_scroll1@2x.jpg 2x, img/img_scroll1@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll2.jpg"
+									srcset="img/img_scroll2@2x.jpg 2x, img/img_scroll2@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll3.jpg"
+									srcset="img/img_scroll3@2x.jpg 2x, img/img_scroll3@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll1.jpg"
+									srcset="img/img_scroll1@2x.jpg 2x, img/img_scroll1@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page-section map-section">
+			<h2 class="section-header">магазины и пункты выдачи в хабаровске</h2>
+			<a href="#" class="link-button">Магазины и пункты выдачи</a>
+		</section>
+		<section class="page-section contacts-map map-margin-section">
+			<div class="contacts-info">
+				<div class="contacts-header">The Mebel</div>
+				<div class="contacts-group">
+					<div class="contacts-group-header">Юридическая информация</div>
+					<p>648888, ул. Гамарника, 72а, Хабаровск, Хабаровский край</p>
+					<p>ООО «TheMebel»</p>
+					<p>ОГРН 1234567890123</p>
+				</div>
+				<div class="contacts-group">
+					<p class="contacts-phone">
+						<span class="phone">8 (800) 100 10 00</span>
+						<span class="phone-info">Бесплатный телефон</span>
+					</p>
+					<p class="contacts-social">
+						<span class="cs-icon">{{mixins.icon('email')}}</span>
+						<a href="mailto:hello@themebel.ru" class="cs-text">hello@themebel.ru</a>
+					</p>
+					<p class="contacts-social">
+						<span class="cs-icon">{{mixins.icon('instagram')}}</span>
+						<a href="https://instagram.com/themebel" class="cs-text">@themebel</a>
+					</p>
+				</div>
+				<div class="contacts-group">
+					<div class="contacts-group-header">График работы</div>
+					<dl class="contacts-hours">
+						<div class="contacts-hours-row">
+							<dt>Пн – чт</dt>
+							<dd>10:00 – 19:00</dd>
+						</div>
+						<div class="contacts-hours-row">
+							<dt>Пт</dt>
+							<dd>10:00 – 18:00</dd>
+						</div>
+						<div class="contacts-hours-row">
+							<dt>Сб – вс</dt>
+							<dd>Выходной</dd>
+						</div>
+					</dl>
+				</div>
+			</div>
+			<div class="map js-map"></div>
+		</section>
+		<section class="page-section">
+			<p class="small">Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности
+				позволяет оценить значение существенных финансовых и административных условий. Не следует, однако
+				забывать, что начало повседневной работы по формированию позиции в значительной степени обуславливает
+				создание модели развития. Разнообразный и богатый опыт начало повседневной работы по формированию
+				позиции влечет за собой процесс внедрения и модернизации модели развития. Значимость этих проблем
+				настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает
+				создание направлений прогрессивного развития.</p>
+		</section>
+	</div>
+</main>
+{% include "partials/_popup_quick_view.html" %}
+{% endblock %}

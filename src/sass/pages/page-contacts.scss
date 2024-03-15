@@ -1,0 +1,151 @@
+.contacts-map {
+  position: relative;
+  
+  
+  .map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 33%;
+    
+    @media screen and (max-width: 768px) {
+      position: static;
+      left: 0;
+      margin-left: 0;
+      height: 300px;
+    }
+  }
+
+}
+
+.contacts-info {
+  max-width: 33%;
+  padding: 56px 40px;
+  background: $cGreyGradient;
+  
+  @media screen and (max-width: 768px) {
+    padding: 32px 16px;
+    max-width: none;
+  }
+}
+
+.contacts-header {
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 36px;
+}
+
+.contacts-group {
+  + .contacts-group {
+    margin-top: 24px;
+  }
+  p {
+    margin-top: 16px;
+  }
+}
+
+.contacts-group-header {
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contacts-phone {
+  display: flex;
+  flex-direction: column;
+  .phone {
+    font-family: Gilroy-ExtraBold, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .phone-info {
+    margin-top: 4px;
+    font-family: Gilroy-Medium, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.contacts-social {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+
+}
+
+.cs-icon {
+  font-size: 24px;
+  margin-right: 12px;
+}
+
+.cs-text {
+  border-bottom: 0;
+}
+
+.contacts-hours {
+  margin-top: 16px;
+}
+
+.contacts-hours-row {
+  display: flex;
+  + .contacts-hours-row {
+    margin-top: 8px;
+  }
+
+  dt {
+    width: 40%;
+  }
+
+  dd {
+  }
+}
+
+.feedback-block {
+  background: $cGreyGradient;
+  margin-top: -16px;
+  padding: 40px;
+  margin-left: -24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  @media screen and (max-width: 768px) {
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.fbb-text {
+  font-family: Gilroy-Medium, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.fbb-phone {
+  font-family: Gilroy-ExtraBold, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+}
+
+.fbb-button {
+  .button {
+    margin-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+}

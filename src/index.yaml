@@ -1,0 +1,117 @@
+ProjectTitle: TheMebel
+
+PageList:
+- file: page-main.html
+  ready: 100
+  name: Главная
+- file: page-styles.html
+  ready: 100
+  name: Страница стилей
+- file: page-contacts.html
+  ready: 100
+  name: Контакты
+- file: page-about.html
+  ready: 100
+  name: О компании
+- file: page-catalog.html
+  ready: 100
+  name: Каталог
+- file: page-catalog-category.html
+  ready: 100
+  name: Категория каталога
+- file: page-404.html
+  ready: 100
+  name: 404
+- file: page-search-results.html
+  ready: 100
+  name: Результаты поиска
+- file: page-cooperation.html
+  ready: 100
+  name: Сотрудничество
+- file: page-loyalty.html
+  ready: 100
+  name: Программа лояльности
+- file: page-checkout.html
+  ready: 100
+  name: Оформление заказа
+- file: page-product.html
+  ready: 100
+  name: Карточка товара
+- file: page-bayers.html
+  ready: 100
+  name: Покупателям
+- file: page-shipping-payments.html
+  ready: 100
+  name: Доставка и оплата
+- file: page-return.html
+  ready: 100
+  name: Условия возврата
+- file: page-warranty.html
+  ready: 100
+  name: Гарантии
+- file: page-designer.html
+  ready: 100
+  name: Дизайнерам
+- file: page-provider.html
+  ready: 100
+  name: Поставщикам 
+- file: page-wholesaler.html
+  ready: 100
+  name: Оптовикам  
+- file: page-checkout-finish.html
+  ready: 100
+  name: Заказ Оформлен 
+- file: page-checkout-not-finish.html
+  ready: 100
+  name: Заказ не формлен  
+- file: page-rules-uses.html
+  ready: 100
+  name: Правила пользования сайтом
+- file: page-privacy-policy.html
+  ready: 100
+  name: Политика конфиденциальности
+- file: page-coockie-rules.html
+  ready: 100
+  name: Правила использования coockies  
+- file: page-articles.html
+  ready: 100
+  name: Статьи
+- file: page-item-articles.html 
+  ready: 100
+  name: Страница статьи     
+- file: page-feedback.html 
+  ready: 100
+  name: Отзывы     
+- file: page-faq.html 
+  ready: 100
+  name: Вопрос ответ
+- file: page-favorites.html 
+  ready: 100
+  name: Избранное     
+- file: page-viewed.html
+  ready: 100
+  name: Ранее просмотренные
+- file: page-shops.html
+  ready: 100
+  name: Магазины и пункты самовывоза
+- file: page-actions.html
+  ready: 100
+  name: Акции
+- file: page-actions-item.html
+  ready: 100
+  name: Страница акции
+- file: page-career.html
+  ready: 100
+  name: Карьера
+- file: page-constructor.html
+  ready: 100
+  name: Конструктор
+- file: page-compare.html
+  ready: 100
+  name: Сравнение
+- file: page-catalog-cat.html
+  ready: 100
+  name: Угловые диваны
+- file: page-sitemap.html 
+  ready: 100
+  name: Карта сайта     

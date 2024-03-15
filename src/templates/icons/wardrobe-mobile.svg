@@ -1,0 +1,37 @@
+<svg width="40" height="45" viewBox="0 0 40 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g id="wardrobe">
+		<g class="hover">
+			<path id="&#209;&#133;&#208;&#190;&#208;&#178;&#208;&#181;&#209;&#128;" opacity="0.7" fill-rule="evenodd"
+				clip-rule="evenodd" d="M0.651093 40.75L2.35999 7.04876L31.6495 5.36987V40.75H0.651093Z"
+				fill="url(#paint01_linear)" />
+		</g>
+		<g class="outline">
+			<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd"
+				d="M1.645 40.6479H35.178V1.645H1.645V40.6479ZM0.822 42.2929C0.368 42.2929 0 41.9249 0 41.4699V0.822C0 0.368 0.368 0 0.822 0H36C36.454 0 36.822 0.368 36.822 0.822V41.4699C36.822 41.9249 36.454 42.2929 36 42.2929H0.822Z"
+				fill="#4D4A2F" />
+			<path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd"
+				d="M22.2055 22.8705V19.3995H21.2655V22.8705H22.2055Z" fill="#4D4A2F" />
+			<path id="Fill 4 Copy 2" fill-rule="evenodd" clip-rule="evenodd"
+				d="M15.8245 22.8705V19.3995H14.8845V22.8705H15.8245Z" fill="#4D4A2F" />
+			<path id="Fill 5" fill-rule="evenodd" clip-rule="evenodd"
+				d="M18.0625 0.967529L18.0625 42.0325H19.0025L19.0025 0.967529L18.0625 0.967529Z" fill="#4D4A2F" />
+			<path id="Line 4" d="M33.625 26.7256L20.875 34.0794" stroke="#4D4A2F" stroke-linecap="square" />
+			<path id="Line 4 Copy" d="M33.5 32.5L24.5 37.5" stroke="#4D4A2F" stroke-linecap="square" />
+			<path id="Line 4 Copy 3" d="M15.875 7.04872L5.5 12.8231" stroke="#4D4A2F" stroke-linecap="square" />
+			<path id="Line 4 Copy 2" d="M15.75 12.8231L3.25 19.3231" stroke="#4D4A2F" stroke-linecap="square" />
+			<path id="Fill 6" fill-rule="evenodd" clip-rule="evenodd"
+				d="M33.064 41.6354H30.235C30.106 41.6354 30 41.7404 30 41.8704V44.7654C30 44.8954 30.106 45.0004 30.235 45.0004H33.064C33.193 45.0004 33.299 44.8954 33.299 44.7654V41.8704C33.299 41.7404 33.193 41.6354 33.064 41.6354Z"
+				fill="#4D4A2F" />
+			<path id="Fill 7" fill-rule="evenodd" clip-rule="evenodd"
+				d="M6.8285 41.6354H4.0005C3.8715 41.6354 3.7655 41.7404 3.7655 41.8704V44.7654C3.7655 44.8954 3.8715 45.0004 4.0005 45.0004H6.8285C6.9575 45.0004 7.0635 44.8954 7.0635 44.7654V41.8704C7.0635 41.7404 6.9575 41.6354 6.8285 41.6354Z"
+				fill="#4D4A2F" />
+		</g>
+	</g>
+	<defs>
+		<linearGradient id="paint01_linear" x1="0.651093" y1="5.36987" x2="0.651093" y2="40.75"
+			gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FF803B" />
+			<stop offset="1" stop-color="#FF9100" />
+		</linearGradient>
+	</defs>
+</svg>

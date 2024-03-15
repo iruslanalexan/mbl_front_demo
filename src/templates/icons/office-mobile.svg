@@ -1,0 +1,43 @@
+<svg width="45" height="42" viewBox="0 0 45 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g id="office">
+		<g class="hover">
+			<path id="Path 44" opacity="0.7" fill-rule="evenodd" clip-rule="evenodd"
+				d="M6.50001 17.5H22L20.917 11.5745L6.2437 9.84253L6.50001 17.5Z" fill="url(#paint01_linear)" />
+			<path id="Path 45" opacity="0.7" fill-rule="evenodd" clip-rule="evenodd"
+				d="M28.537 41.5L39.9972 39.2443V23.68L2.16701 22L1.69501 24.5H28L28.537 41.5Z"
+				fill="url(#paint11_linear)" />
+		</g>
+		<g class="outline">
+			<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd"
+				d="M7.099 17.105H23.711V8.695H7.099V17.105ZM24.559 18.801H6.251C5.783 18.801 5.403 18.421 5.403 17.953V7.848C5.403 7.379 5.783 7 6.251 7H24.559C25.027 7 25.407 7.379 25.407 7.848V17.953C25.407 18.421 25.027 18.801 24.559 18.801Z"
+				fill="#4D4A2F" />
+			<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd"
+				d="M13.6509 20.3481H17.1589L16.6649 18.9411H14.1449L13.6509 20.3481ZM18.3549 22.0431H12.4549C12.1799 22.0431 11.9219 21.9101 11.7629 21.6861C11.6049 21.4621 11.5639 21.1751 11.6549 20.9151L12.7449 17.8121C12.8639 17.4721 13.1849 17.2451 13.5449 17.2451H17.2659C17.6259 17.2451 17.9459 17.4721 18.0659 17.8121L19.1549 20.9151C19.2459 21.1751 19.2059 21.4621 19.0469 21.6861C18.8879 21.9101 18.6299 22.0431 18.3549 22.0431Z"
+				fill="#4D4A2F" />
+			<path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd"
+				d="M28.537 40.3051H41.114V25.3761H28.537V40.3051ZM41.962 42.0001H27.69C27.221 42.0001 26.842 41.6211 26.842 41.1521V25.3761H3.86201V42.0001H2.16701V24.5281C2.16701 24.0601 2.54601 23.6801 3.01401 23.6801H41.962C42.43 23.6801 42.809 24.0601 42.809 24.5281V41.1521C42.809 41.6211 42.43 42.0001 41.962 42.0001Z"
+				fill="#4D4A2F" />
+			<path id="Fill 5" fill-rule="evenodd" clip-rule="evenodd"
+				d="M42.1712 31.9876H27.6892C27.4222 31.9876 27.2052 31.7706 27.2052 31.5036C27.2052 31.2356 27.4222 31.0186 27.6892 31.0186H42.1712C42.4392 31.0186 42.6552 31.2356 42.6552 31.5036C42.6552 31.7706 42.4392 31.9876 42.1712 31.9876Z"
+				fill="#4D4A2F" />
+			<path id="Fill 6" fill-rule="evenodd" clip-rule="evenodd"
+				d="M1.695 23.68H43.28V22.44H1.695V23.68ZM44.128 25.376H0.848C0.379 25.376 0 24.997 0 24.528V21.592C0 21.124 0.379 20.745 0.848 20.745H44.128C44.596 20.745 44.976 21.124 44.976 21.592V24.528C44.976 24.997 44.596 25.376 44.128 25.376Z"
+				fill="#4D4A2F" />
+			<path id="Fill 7" fill-rule="evenodd" clip-rule="evenodd" d="M33.774 28.646H35.958V27.677H33.774V28.646Z"
+				fill="#4D4A2F" />
+			<path id="Fill 8" fill-rule="evenodd" clip-rule="evenodd" d="M33.774 34.973H35.958V34.004H33.774V34.973Z"
+				fill="#4D4A2F" />
+		</g>
+	</g>
+	<defs>
+		<linearGradient id="paint01_linear" x1="6.2437" y1="9.84253" x2="6.2437" y2="17.5"
+			gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FF803B" />
+			<stop offset="1" stop-color="#FF9100" />
+		</linearGradient>
+		<linearGradient id="paint11_linear" x1="1.69501" y1="22" x2="1.69501" y2="41.5" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FF803B" />
+			<stop offset="1" stop-color="#FF9100" />
+		</linearGradient>
+	</defs>
+</svg>

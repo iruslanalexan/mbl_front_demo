@@ -1,0 +1,37 @@
+.breadcrumbs {
+	margin-top: 16px;
+	margin-bottom: 24px;
+	font-size: 12px;
+}
+
+.breadcrumbs-list {
+	list-style-type: none;
+	// display: flex;
+}
+
+.breadcrumbs-item {
+	display: inline;
+
+	&:after {
+		content: "/";
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	
+	&:last-child {
+		&:after {
+			content: "";
+		}
+	}
+}
+
+.breadcrumbs-link {
+	color: $cOrange;
+	transition: color 0.3s;
+	&[href] {
+		color: inherit;
+	}
+	&:hover {
+		color: $cOrange;
+	}
+}

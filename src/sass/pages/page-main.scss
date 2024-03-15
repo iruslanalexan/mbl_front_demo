@@ -1,0 +1,272 @@
+body {
+	&:not(.menu-collapsed) {
+		.cards-gallery {
+			.section-header {
+				padding-left: 0;
+			}
+			.swiper-container {
+				padding: 0;
+				padding-bottom: 75px;
+
+				@media (min-width: $sm) {
+					margin-left: -32px;
+					margin-right: -32px;
+					padding-top: 32px;
+					// padding-right: 32px;
+					padding-bottom: 75px;
+					// padding-left: 32px;
+				}
+			}
+			.cards {
+				padding: 0;
+
+				@media (min-width: $sm) {
+					padding-right: 32px;
+					padding-left: 32px;
+				}
+			}
+			.swiper-button-prev {
+				left: -12px;
+				bottom: auto;
+				height: 300px;
+				background: transparent;
+			}
+			.swiper-button-next {
+				right: -12px;
+				bottom: auto;
+				height: 300px;
+				background: transparent;
+			}
+		}
+	}
+}
+.main-page-slider {
+	@media screen and (max-width: $sm - 1) {
+		margin-top: 0px;
+
+		.wrapper {
+			padding: 0 !important;
+		}
+	}
+
+	.swiper-container,
+	.swiper-pagination {
+		// max-width: 1252px;
+		// padding-left: calc(var(--padding-left));
+		// margin-left: auto;
+		// margin-right: auto;
+
+		// .is-browser-ie & {
+		//   padding-left: 308px;
+		// }
+
+		padding-bottom: 0px;
+	}
+
+	.swiper-container {
+		height: 596px;
+
+		@media screen and (max-width: 768px) {
+			height: 320px;
+		}
+	}
+
+	.swiper-wrapper {
+		align-items: center;
+	}
+
+	.swiper-slide {
+		height: auto;
+
+		img {
+			display: block;
+			width: 100%;
+			// height: 100%;
+			// object-fit: cover;
+
+			@media screen and (max-width: $sm - 1) {
+			}
+		}
+	}
+
+	.main-page-slider-item-content {
+		position: absolute;
+		left: 20px;
+		top: 50%;
+		width: 165px;
+		font-family: Gilroy-ExtraBold, Arial, sans-serif;
+		text-transform: uppercase;
+		transform: translateY(-75%);
+	}
+
+	.main-page-slider-item-title {
+		margin-bottom: 17px;
+		font-size: 12px;
+		line-height: 18px;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+
+	.main-page-slider-item-text {
+		max-width: 135px;
+		font-size: 10px;
+		line-height: 14px;
+		color: #4d4a2f;
+	}
+}
+
+.tooltips-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+
+	.tooltip-button {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: 2;
+		// transform: translate(-50%, -50%);
+		overflow: visible;
+		width: 50px;
+		height: 50px;
+		box-sizing: border-box;
+		background: none;
+
+		svg {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			padding: 4px;
+			width: 16px;
+			height: 16px;
+			width: 24px;
+			height: 24px;
+			background: linear-gradient(180deg, #ffc400 0%, #ff9100 100%);
+			box-shadow: -2px 4px 15px #ff9100;
+			border-radius: 50%;
+			transform: translate(-50%, -50%);
+			transition: 0.25s;
+		}
+
+		&:hover {
+			svg {
+				width: 32px;
+				height: 32px;
+			}
+		}
+
+		.tooltip {
+			background-color: white;
+			padding: 12px;
+			min-width: 165px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+			transform: translate(-50%, -50%);
+			display: none;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 100%;
+				width: 100%;
+				height: 14px;
+			}
+
+			.type {
+				font-family: Gilroy-Medium, Arial, sans-serif;
+				font-size: 14px;
+				line-height: 20px;
+				color: #4d4a2f;
+				opacity: 0.5;
+			}
+
+			.discount {
+				text-align: right;
+				flex: 1;
+				font-family: Gilroy-ExtraBold, Arial, sans-serif;
+				font-size: 16px;
+				line-height: 20px;
+				color: #ff9100;
+			}
+
+			h1.header,
+			.h1.header {
+				font-family: Gilroy-Medium, Arial, sans-serif;
+				text-transform: none;
+				font-size: 16px;
+				line-height: 19px;
+				color: #4d4a2f;
+				margin: 0px;
+				transition: 0.25s;
+			}
+
+			.arrow {
+				position: absolute;
+				width: 8px;
+				height: 8px;
+				z-index: -1;
+				bottom: -4px;
+				left: calc(50% - 4px);
+				transform: rotate(45deg);
+				background: #fff;
+			}
+		}
+
+		a.tooltip {
+			&:hover {
+				.header {
+					color: #ff9100;
+				}
+			}
+		}
+	}
+}
+
+.themebel-icon {
+	display: inline-block;
+	margin-left: 4px;
+	font-size: 16px;
+}
+
+.themebel-image {
+	width: 100%;
+	margin-bottom: 8px;
+
+	img {
+		display: block;
+		margin: 0px auto;
+	}
+}
+
+.themebel-text {
+	font-family: Gilroy-Light, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 0 30px;
+}
+
+.social-feed-text-small {
+	max-width: 600px;
+}
+
+.social-feed-text {
+	margin-top: 30px;
+	font-size: 12px;
+	line-height: 14px;
+	color: $cSemiBlack;
+}
+.mini-content {
+	@media screen and (max-width: 768px) {
+		max-width: 250px;
+		margin: auto;
+	}
+}

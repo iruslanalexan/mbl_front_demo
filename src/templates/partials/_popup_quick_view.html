@@ -1,0 +1,131 @@
+<div id="popup-quick-view" class="container-quick-view">
+	<article class="product">
+		<div class="p-left">
+			<ul class="p-tags">
+				<li class="red">-10%</li>
+			</ul>
+			<div class="p-icons">
+				<button class="button-icon is-active js-add-to-fav"><i class="icon-heart"></i><span class="button-icon-text" data-on="В избранном" data-off="Добавить в избранное">Добавить в избранное</span></button>
+				<button class="button-icon js-add-to-fav">{{mixins.icon('compare')}}<span class="button-icon-text" data-on="В сравнении" data-off="Добавить в сравнение">Добавить в сравнение</span></button>
+			</div>
+			<div class="p-image">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a href="./img/product1.jpg" data-fancybox="gallery"><img src="./img/product1.jpg"></a></div>
+						<div class="swiper-slide"><a href="./img/product1.jpg" data-fancybox="gallery"><img src="./img/product1.jpg"></a></div>
+						<div class="swiper-slide"><a href="./img/product1.jpg" data-fancybox="gallery"><img src="./img/product1.jpg"></a></div>
+						<div class="swiper-slide"><a href="./img/product1.jpg" data-fancybox="gallery"><img src="./img/product1.jpg"></a></div>
+						<div class="swiper-slide"><a href="./img/product1.jpg" data-fancybox="gallery"><img src="./img/product1.jpg"></a></div>
+						<div class="swiper-slide"><a href="./img/product1.jpg" data-fancybox="gallery"><img src="./img/product1.jpg"></a></div>
+					</div>
+				</div>
+			</div>
+			<div class="p-gallery">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide active"><img src="./img/product1.jpg"></div>
+						<div class="swiper-slide"><img src="./img/product1.jpg"></div>
+						<div class="swiper-slide"><img src="./img/product1.jpg"></div>
+						<div class="swiper-slide"><img src="./img/product1.jpg"></div>
+						<div class="swiper-slide"><img src="./img/product1.jpg"></div>
+						<div class="swiper-slide"><img src="./img/product1.jpg"></div>
+					</div>
+				</div>
+				<div class="swiper-button-prev">{{mixins.icon('arrow_big_left')}}</div>
+				<div class="swiper-button-next">{{mixins.icon('arrow_big_right')}}</div>
+			</div>
+		</div>
+		<div class="p-right">
+			<div class="p-row p-header">
+				<h2>Кресло Ультра</h2>
+			</div>
+			<div class="p-row p-stars">
+				<div class="ps-stars js-stars" data-rating="2" data-readonly="1"></div>
+				<a href="#" class="link-button">4 отзыва</a>
+			</div>
+			<div class="p-price-btn">
+				<div>
+					<div class="p-row p-stock">
+						<span class="ps-red">-10%</span>
+						<span class="ps-crossed">25 900 р.</span>
+					</div>
+					<div class="p-row p-price">
+						<h2>24 900 р.</h2>
+					</div>
+				</div>
+				<div class="p-row p-bay">
+					<button class="button" data-fancybox data-src="#add-to-basket"><span class="button-text">Купить</span><svg data-text="Купить" width="0" height="0"></svg></button>
+				</div>
+			</div>
+			<div class="p-row p-bonuses">
+				<span>Бонусная программа <b>89</b> баллов на счёт</span>
+			</div>
+			<div class="p-row p-comments">
+				<span>Пункт выдачи в <a href="#popup-pickup" data-fancybox><b>Хабаровске</b></a></span>
+			</div>
+			<div class="p-row p-comments">
+				<span>С доставкой через 30 дней до <b>Владивостока</b></span>
+			</div>
+			<div class="p-row p-variants p-1-2-block">
+				<div class="p-col p-header">
+					<h4>Вариант</h4>
+				</div>
+				<div class="p-col">
+					<div class="pv-links">
+						<a href="#" class="link-button active">С левым углом</a>
+						<a href="#" class="link-button">С правым углом</a>
+					</div>
+				</div>
+			</div>
+			<div class="p-row p-color p-1-2-block">
+				<div class="p-col p-header">
+					<h4>Цвет</h4>
+				</div>
+				<div class="p-col">
+					<div class="p-row p-colors">
+						<label>
+							<input type="radio" name="color-5" checked>
+							<span style="background-color: #CB7878;"></span>
+						</label>
+						<label>
+							<input type="radio" name="color-5">
+							<span style="background-color: #E9E9E9;"></span>
+						</label>
+						<label>
+							<input type="radio" name="color-5">
+							<span style="background-color: #B1A5D5;"></span>
+						</label>
+						<label>
+							<input type="radio" name="color-5">
+							<span style="background-color: #9E7320;"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="p-row p-characteristics-header">
+				<h4>Основные характеристики</h4>
+			</div>
+			<div class="p-col p-characteristics">
+				<div class="p-row">
+					<div class="p-col"><span>Материал каркаса</span></div>
+					<div class="p-col pc-value"><span>Массив гевеи</span></div>
+				</div>
+				<div class="p-row">
+					<div class="p-col"><span>Материал обивки</span></div>
+					<div class="p-col pc-value"><span>Ткань</span></div>
+				</div>
+				<div class="p-row">
+					<div class="p-col"><span>Материал ножек</span></div>
+					<div class="p-col pc-value"><span>Массив гевеи</span></div>
+				</div>
+				<div class="p-row">
+					<div class="p-col"><span>Механизм</span></div>
+					<div class="p-col pc-value"><span>Бабочка</span></div>
+				</div>
+				<div class="p-characteristics-all">
+					<a href="page-product.html">Все характеристики</a>
+				</div>
+			</div>
+		</div>
+	</article>
+</div>

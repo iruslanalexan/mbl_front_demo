@@ -1,0 +1,27 @@
+:root {
+  --padding-left: 308px;
+  --left-gap: 24px;
+  --menu-translate: 0;
+  --menu-position: 0;
+}
+
+$cWhite: #ffffff;
+$cBlack: #4D4A2F;
+$cSemiBlack: rgba($cBlack, .5);
+$cOrange: #FF803B;
+$cYellow: #FFC400;
+$cLightOrange: #FF9100;
+$cOrangeGradient: linear-gradient(66.04deg, $cYellow 13.49%, $cLightOrange 81.82%);
+$cButtonGradient: linear-gradient(220.28deg, #FF803B 20.57%, #FF9100 83.95%);
+$cGreyGradient: linear-gradient(180deg, #E9EAEB 1.55%, #E6E4DB 99.64%);
+$cMediumGrey: #DADADA;
+
+
+$cRed: #ff0000;
+$cRedActive: #FF3F31;
+$cSemiRed: rgba(255, 0, 0, .5);
+$cSemiBlack: rgba(65, 65, 65, .5);
+$cDarkGrey: #999999;
+$cLightGrey: #f5f5f5;
+
+$sm: 768px;

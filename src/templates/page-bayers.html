@@ -1,0 +1,77 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+  <div class="wrapper">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Покупателям</a>
+        </li>
+      </ul>
+    </div>
+    <h1 class="page-header">Покупателям</h1>
+    <nav class="page-subnav">
+      <ul class="page-subnav-list">
+        <li class="page-subnav-list-item">
+          <a class="page-subnav-link" >Покупателям</a>
+        </li>
+        <li class="page-subnav-list-item">
+          <a class="page-subnav-link" href="/page-shipping-payments.html">Доставка и оплата</a>
+        </li>
+        <li class="page-subnav-list-item">
+          <a class="page-subnav-link" href="/page-return.html">Условия возврата</a>
+        </li>
+        <li class="page-subnav-list-item">
+          <a class="page-subnav-link" href="/page-warranty.html" >Гарантии</a>
+        </li>
+
+      </ul>
+    </nav>
+    <section class="promo-section promo-section--about full-width">
+      <picture class="full-width-picture">
+        <source srcset="img/about_top@2x.jpg 2x"/>
+        <img src="img/about_top.jpg"/>
+      </picture>
+      <div class="promo-description">
+        <p class="promo-section-header">themebel</p>
+        <p class="promo-section-text">Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности требуют определения и уточнения дальнейших </p>
+        <div class="promo-section-action"><a href="#" class="promo-section-link">Перейти в каталог</a></div>
+      </div>
+    </section>
+    <section class="page-section styled-content">
+      <div class="lead">
+        <p>Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт реализация намеченных плановых заданий представляет собой интересный эксперимент проверки направлений прогрессивного развития.</p>
+      </div>
+    </section>
+    <section class="grid-section">
+      <div class="row row-grid-3">
+        <div class="row-box">
+          <h2>Доставка и оплата</h2>
+          <p>Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач.</p>
+          <a href="" class="link-button">Подробнее</a>
+        </div>
+        <div class="row-box">
+          <h2>Условия возврата</h2>
+          <p>Повседневная практика показывает, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации систем массового участия.</p>
+          <a href="" class="link-button">Подробнее</a>
+        </div>
+        <div class="row-box">
+          <h2>Гарантии</h2>
+          <p>Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+          <a href="" class="link-button">Подробнее</a>
+        </div>
+      </div>
+
+    </section >
+  </div>
+
+</main>
+
+{% endblock %}

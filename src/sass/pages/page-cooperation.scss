@@ -1,0 +1,221 @@
+.partner-benefits {
+    h1 {
+        margin-top: 74px;
+    }
+    .cards-container {
+        .row {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 5px;
+            justify-content: flex-start;
+
+            .benefit-card {
+                text-align: center;
+                margin-bottom: 10px;
+                padding: 0 15px;
+               
+                .b-container {
+                    display: block;
+                    width: 288px;
+                    height: 219px;
+                    margin: 0px auto;
+                    position: relative;
+                    cursor: pointer;
+
+                    &:hover {
+                        p {
+                            color: #FFFFFF;
+                            padding: 15px 15px 45px 15px;
+                            background-color: rgba($color: #FF9100, $alpha: 0.85);
+                        }
+                    }
+                    p {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        color: #474216;
+                        position: absolute;
+                        background-color: rgba($color: #F9F9F9, $alpha: 0.85);
+                        padding: 15px;
+                        display: block;
+                        width: 100%;
+                        bottom: 0px;
+                        left: 0px;
+                        transition: all .3s;
+
+                        &.selected {
+                            color: #FFFFFF;
+                            padding: 15px 15px 45px 15px;
+                            background-color: rgba($color: #FF9100, $alpha: 0.85);
+                        }
+                    }
+
+                    @media (max-width: $sm - 1) {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                @media (max-width: $sm - 1) {
+                    width: 100%;
+
+                    img {
+                        vertical-align: middle;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.detailed-info-block {
+    position: relative;
+    background: linear-gradient(180deg, #E9EAEB 1.55%, #E6E4DB 99.64%);
+    // max-width: 874px;
+    padding: 20px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 87px;
+        height: 163px;
+        background: url("../img/cooperation-cat.svg") 100% 50% no-repeat;
+        object-fit: contain;
+
+        @media (max-width: $sm - 1) {
+            display: none;
+        }
+    }
+
+    h1,
+    .h1 {
+        max-width: 410px;
+        font-family: Gilroy-Medium, Arial, sans-serif;
+        font-weight: 500;
+
+        &:last-child {
+            @media (min-width: $sm) {
+                margin: 20px 0;
+            }
+        }
+    }
+
+    p {
+        max-width: 533px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #474216;
+    }
+
+    .f-col:first-child {
+        flex: 2;
+    }
+
+    .f-col:last-child {
+        @media (min-width: $sm) {
+            flex: 1;
+            align-self: flex-end;
+            justify-content: flex-start;
+            text-align: left;
+        }
+    }
+
+    .f-col + .f-col {
+        @media (max-width: $sm - 1) {
+            margin-top: 20px;
+        }
+    }
+
+    .button {
+        display: inline-block;
+        vertical-align: middle;
+        // margin: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .form-checkbox {
+        max-width: 330px;
+    }
+
+    &-success {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #E9EAEB 1.55%, #E6E4DB 99.64%);
+
+        &-text {
+        }
+
+        .is-success-send & {
+            display: flex;
+        }
+    }
+
+    @media (min-width: $sm) {
+        display: flex;
+        align-items: stretch;
+        padding: 40px;
+    }
+}
+
+.promo-section--cooperation {
+    height: 427px;
+
+    .promo-description {
+        left: 41px;
+        max-width: 300px;
+    }
+
+    h1.section-header,
+    .h1.section-header {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .full-width-picture img {
+        object-position: left top;
+        margin-left: 0;
+    }
+
+    p.promo-section-text {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #4D4A2F;
+    }
+
+    .download-doc {
+        .download-doc-name {
+            color: #474216;
+        }
+
+        .download-doc-meta {
+            color: #474216;
+        }
+
+        &:hover {
+            .download-doc-name {
+                color: #474216;
+            }
+
+            .download-doc-meta {
+                color: #474216;
+            }
+        }
+    }
+}

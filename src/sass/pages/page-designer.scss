@@ -1,0 +1,21 @@
+.partner-designer {
+    .flex-container {
+        flex-wrap: wrap;
+        > * {
+            margin: 5px;
+        }
+    }
+}
+.designer-block {
+    .list-post {
+        li {
+            padding: 0 15px;
+        }
+    }
+    h3 {
+        margin-top: 25px;
+    }
+    img {
+        max-width: 100%;
+    }
+}

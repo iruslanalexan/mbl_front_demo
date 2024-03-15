@@ -1,0 +1,155 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+	<div class="wrapper">
+		<div class="breadcrumbs">
+			<ul class="breadcrumbs-list">
+				<li class="breadcrumbs-item">
+					<a href="#" class="breadcrumbs-link">Главная</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a class="breadcrumbs-link">Контакты</a>
+				</li>
+			</ul>
+		</div>
+		<h1 class="page-header">Контакты</h1>
+		<nav class="page-subnav">
+			<ul class="page-subnav-list">
+				<li class="page-subnav-list-item">
+					<a href="/page-about.html" class="page-subnav-link">О компании</a>
+				</li>
+				<li class="page-subnav-list-item">
+					<a href="/page-feedback.html" class="page-subnav-link">Отзывы</a>
+				</li>
+				<li class="page-subnav-list-item">
+					<a href="/page-faq.html" class="page-subnav-link">Вопрос-ответ</a>
+				</li>
+				<li class="page-subnav-list-item">
+					<a class="page-subnav-link">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		<section class="page-section contacts-map">
+			<div class="contacts-info">
+				<div class="contacts-header">The Mebel</div>
+				<div class="contacts-group">
+					<div class="contacts-group-header">Юридическая информация</div>
+					<p>648888, ул. Гамарника, 72а, Хабаровск, Хабаровский край</p>
+					<p>ООО «TheMebel»</p>
+					<p>ОГРН 1234567890123</p>
+				</div>
+				<div class="contacts-group">
+					<p class="contacts-phone">
+						<span class="phone">8 (800) 100 10 00</span>
+						<span class="phone-info">Бесплатный телефон</span>
+					</p>
+					<p class="contacts-social">
+						<span class="cs-icon">{{mixins.icon('email')}}</span>
+						<a href="mailto:hello@themebel.ru" class="cs-text">hello@themebel.ru</a>
+					</p>
+					<p class="contacts-social">
+						<span class="cs-icon">{{mixins.icon('instagram')}}</span>
+						<a href="https://instagram.com/themebel" class="cs-text">@themebel</a>
+					</p>
+				</div>
+				<div class="contacts-group">
+					<div class="contacts-group-header">График работы</div>
+					<dl class="contacts-hours">
+						<div class="contacts-hours-row">
+							<dt>Пн – чт</dt>
+							<dd>10:00 – 19:00</dd>
+						</div>
+						<div class="contacts-hours-row">
+							<dt>Пт</dt>
+							<dd>10:00 – 18:00</dd>
+						</div>
+						<div class="contacts-hours-row">
+							<dt>Сб – вс</dt>
+							<dd>Выходной</dd>
+						</div>
+					</dl>
+				</div>
+
+			</div>
+			<div class="map js-map"></div>
+		</section>
+		<section class="page-section">
+			<h2 class="section-header">Хотите посмотреть товар в магазине? Приезжайте в гости!</h2>
+			<p class="section-header-text">Приезжайте в наши просторные магазины и&nbsp;убедитесь сами, <br
+					class="hidden-mobile">что наша мебель действительно стильная и удобная.</p>
+			<div class="carousel">
+				<div class="swiper-button-prev">{{mixins.icon('arrow_big_left')}}</div>
+				<div class="swiper-button-next">{{mixins.icon('arrow_big_right')}}</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll1.jpg"
+									srcset="img/img_scroll1@2x.jpg 2x, img/img_scroll1@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll2.jpg"
+									srcset="img/img_scroll2@2x.jpg 2x, img/img_scroll2@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll3.jpg"
+									srcset="img/img_scroll3@2x.jpg 2x, img/img_scroll3@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll1.jpg"
+									srcset="img/img_scroll1@2x.jpg 2x, img/img_scroll1@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll1.jpg"
+									srcset="img/img_scroll1@2x.jpg 2x, img/img_scroll1@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll2.jpg"
+									srcset="img/img_scroll2@2x.jpg 2x, img/img_scroll2@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll3.jpg"
+									srcset="img/img_scroll3@2x.jpg 2x, img/img_scroll3@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="carousel__item">
+								<img src="img/img_scroll1.jpg"
+									srcset="img/img_scroll1@2x.jpg 2x, img/img_scroll1@3x.jpg 3x" alt="Instagram">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page-section">
+			<div class="feedback-block">
+				<div class="fbb-text">Если у вас возникли трудности <br>
+					мы с радостью поможем!</div>
+				<div class="fbb-phone">8 (800) 100 10 00</div>
+				<div class="fbb-button">
+					<button data-fancybox data-src="#back-message" class="button"><span class="button-text">Обратная связь</span><svg data-text="Обратная связь" width="0" height="0"></svg></button>
+				</div>
+			</div>
+		</section>
+
+	</div>
+</main>
+
+{% endblock %}

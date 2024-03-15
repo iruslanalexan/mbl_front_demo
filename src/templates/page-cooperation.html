@@ -1,0 +1,210 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+	<div class="wrapper">
+		{% set links = [
+        { title: 'Главная', href: '/' },
+        { title: 'Сотрудничество', href: '' }
+    ] %}
+		{% include './partials/_breadcrumbs.html' %}
+		<h1 class="page-header">Сотрудничество</h1>
+		<nav class="page-subnav">
+			<ul class="page-subnav-list">
+				<li class="page-subnav-list-item">
+					<a class="page-subnav-link">Сотрудничество</a>
+				</li>
+				<li class="page-subnav-list-item">
+					<a href="#" class="page-subnav-link">Дизайнерам</a>
+				</li>
+				<li class="page-subnav-list-item">
+					<a href="#" class="page-subnav-link">Поставщикам</a>
+				</li>
+				<li class="page-subnav-list-item">
+					<a href="#" class="page-subnav-link">Оптовикам</a>
+				</li>
+				<li class="page-subnav-list-item">
+					<a href="#" class="page-subnav-link">Карьера</a>
+				</li>
+			</ul>
+		</nav>
+		<section class="promo-section promo-section--cooperation full-width">
+			<picture class="full-width-picture">
+				<img src="img/cooperation.jpg" />
+			</picture>
+			<div class="promo-description">
+				<h2 class="h1 section-header promo-section-header">Сотрудничество</h2>
+				<p class="promo-section-text">Идейные соображения высшего порядка, а также постоянный количественный
+					рост и
+					сфера нашей активности требуют определения и уточнения дальнейших </p>
+				<div class="promo-section-action">
+					<ul class="files-list">
+						<li class="files-item">
+							<a href="/" class="download-doc">
+								<span class="download-doc-icon">{{mixins.icon('file')}}</span>
+								<div class="download-doc-info">
+									<span class="download-doc-name">Каталог продукции с очень длинным названием</span>
+									<span class="download-doc-meta">Файл PDF (1.3 Mb) </span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="page-section partner-benefits">
+			<h2 class="h1">Наши партнеры получают&nbsp;от&nbsp;нас</h2>
+			<div class="cards-container">
+				<div class="row">
+					<div class="benefit-card">
+						<div class="b-container">
+							<img src="img/benefit-img1.jpg" />
+							<p>Брендбук</p>
+						</div>
+					</div>
+					<div class="benefit-card">
+						<div class="b-container">
+							<img src="img/benefit-img2.jpg" />
+							<p>Пособие по мерчендайзингу</p>
+						</div>
+					</div>
+					<div class="benefit-card">
+						<div class="b-container">
+							<img src="img/benefit-img3.jpg" />
+							<p>Пособие по внутреннему оформлению салона</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="benefit-card">
+						<div class="b-container">
+							<img src="img/benefit-img4.jpg" />
+							<p>Пособие по рекламной и маркетинговой активности</p>
+						</div>
+					</div>
+					<div class="benefit-card">
+						<div class="b-container">
+							<img src="img/benefit-img5.jpg" />
+							<p>Ассортимент и пособие по продукту</p>
+						</div>
+					</div>
+					<div class="benefit-card">
+						<div class="b-container">
+							<img src="img/benefit-img6.jpg" />
+							<p>Комплект операционных инструкций и памяток</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page-section" style="max-width: 874px;">
+			<div class="accordion" data-accordion>
+				<section class="accordion__section collapsible-closed" data-collapsible>
+					<h3>
+						<button class="accordion__trigger" data-collapsible-trigger>
+							Удобные для вас формы оплаты
+							<span class="accordion__icon">{{mixins.icon('collapse')}}</span>
+						</button>
+					</h3>
+					<div class="accordion__body" data-collapsible-body>
+						<div class="accordion__content" data-collapsible-inner>
+							<p>Каждый товар, купленный у нас, полностью готов к сборке и обязательно снабжен
+								инструкцией. Все
+								необходимые отверстия уже сделаны производителем. Для самостоятельной сборки вам,
+								вероятнее всего,
+								понадобится крестовая и шлицевая отвертки, набор шестигранников и молоток.</p>
+						</div>
+					</div>
+				</section>
+				<section class="accordion__section collapsible-closed" data-collapsible>
+					<h3>
+						<button class="accordion__trigger" data-collapsible-trigger>
+							Индивидуальные условия сотрудничества
+							<span class="accordion__icon">{{mixins.icon('collapse')}}</span>
+						</button>
+					</h3>
+					<div class="accordion__body" data-collapsible-body>
+						<div class="accordion__content" data-collapsible-inner>
+							<p>Каждый товар, купленный у нас, полностью готов к сборке и обязательно снабжен
+								инструкцией. Все
+								необходимые отверстия уже сделаны производителем. Для самостоятельной сборки вам,
+								вероятнее всего,
+								понадобится крестовая и шлицевая отвертки, набор шестигранников и молоток.</p>
+						</div>
+					</div>
+				</section>
+				<section class="accordion__section collapsible-closed" data-collapsible>
+					<h3>
+						<button class="accordion__trigger" data-collapsible-trigger>
+							Рекламно–информационную поддержку
+							<span class="accordion__icon">{{mixins.icon('collapse')}}</span>
+						</button>
+					</h3>
+					<div class="accordion__body" data-collapsible-body>
+						<div class="accordion__content" data-collapsible-inner>
+							<p>Каждый товар, купленный у нас, полностью готов к сборке и обязательно снабжен
+								инструкцией. Все
+								необходимые отверстия уже сделаны производителем. Для самостоятельной сборки вам,
+								вероятнее всего,
+								понадобится крестовая и шлицевая отвертки, набор шестигранников и молоток.</p>
+						</div>
+					</div>
+				</section>
+				<section class="accordion__section collapsible-closed" data-collapsible>
+					<h3>
+						<button class="accordion__trigger" data-collapsible-trigger>
+							Помощь в проведении выставок и других мероприятий, способствующих развитию бизнеса и
+							привлечению новых
+							клиентов
+							<span class="accordion__icon">{{mixins.icon('collapse')}}</span>
+						</button>
+					</h3>
+					<div class="accordion__body" data-collapsible-body>
+						<div class="accordion__content" data-collapsible-inner>
+							<p>Каждый товар, купленный у нас, полностью готов к сборке и обязательно снабжен
+								инструкцией. Все
+								необходимые отверстия уже сделаны производителем. Для самостоятельной сборки вам,
+								вероятнее всего,
+								понадобится крестовая и шлицевая отвертки, набор шестигранников и молоток.</p>
+						</div>
+					</div>
+				</section>
+				<section class="accordion__section collapsible-closed" data-collapsible>
+					<h3>
+						<button class="accordion__trigger" data-collapsible-trigger>
+							Удобные для вас формы оплаты
+							<span class="accordion__icon">{{mixins.icon('collapse')}}</span>
+						</button>
+					</h3>
+					<div class="accordion__body" data-collapsible-body>
+						<div class="accordion__content" data-collapsible-inner>
+							<p>Каждый товар, купленный у нас, полностью готов к сборке и обязательно снабжен
+								инструкцией. Все
+								необходимые отверстия уже сделаны производителем. Для самостоятельной сборки вам,
+								вероятнее всего,
+								понадобится крестовая и шлицевая отвертки, набор шестигранников и молоток.</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section class="page-section">
+			<div class="detailed-info-block">
+				<div class="f-col">
+					<h2 class="h1">Более подробную информацию мы направим вам на почту</h2>
+					<p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют
+						от нас
+						анализа систем массового участия.</p>
+				</div>
+				<div class="f-col">
+					<a data-fancybox data-src="#back-message" href="javascript:;" class="button"><span class="button-text">Обратная связь</span><svg data-text="Обратная связь" width="0" height="0"></svg></a>
+				</div>
+			</div>
+		</section>
+	</div>
+</main>
+
+{% endblock %}

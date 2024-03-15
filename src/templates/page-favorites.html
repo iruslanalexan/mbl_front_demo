@@ -1,0 +1,52 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+  <div class="wrapper">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a href="/page-main.html" class="breadcrumbs-link">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Избранное</a>
+        </li>
+      </ul>
+    </div>
+	<h1 class="page-header">Избранное</h1>
+	<div class="favorites-top page-section">
+		<div class="favorites-top__text">
+			<p>Идейные соображения высшего порядка, а также реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.</p>
+		</div>
+		<div class="favorites-top__button">
+			<a href="#" class="button"><span class="button-text">Купить все товары</span><svg data-text="Купить все товары" width="0" height="0"></svg></a>
+		</div>
+	</div>
+    <div class="js-filter-results filter-results page-section">
+      <div class="catalog-section">
+        {% include "partials/_8cards_4col.html" %}
+      </div>
+      <div class="filter-results-refresh">
+        <a href="#">{{mixins.icon('refresh')}}</a>
+      </div>
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item--prev"><a href="#"
+            class="pagination-action pagination-action--inactive">{{mixins.icon('arrow_big_left')}}</a></li>
+        <li class="pagination-item"><a href="#" class="pagination-link pagination-link--current">1</a></li>
+        <li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
+        <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+        <li class="pagination-item">...</li>
+        <li class="pagination-item"><a href="#" class="pagination-link">13</a></li>
+        <li class="pagination-item"><a href="#" class="pagination-link">14</a></li>
+        <li class="pagination-item"><a href="#" class="pagination-link">15</a></li>
+        <li class="pagination-item pagination-item--next"><a href="#"
+            class="pagination-action">{{mixins.icon('arrow_big_right')}}</a></li>
+      </ul>
+    </div>
+  </div>
+</main>
+{% include "partials/_popup_quick_view.html" %}
+{% endblock %}

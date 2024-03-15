@@ -1,0 +1,47 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+    <div class="wrapper">
+        <section class="page-section">
+            {% set links = [
+                { title: 'Главная', href: '/' },
+                { title: 'Оформление заказа', href: '' }
+            ] %}
+            {% include './partials/_breadcrumbs.html' %}
+        </section>
+        <h1>Заказ оформлен</h1>
+        <section class="page-section checkout-background-section">
+            <div class="checkout-price-with-finish">
+              <span>Спасибо за Ваш заказ! Наш менеджер свяжется с Вами в ближайшее время для того чтобы уточнить детали заказа.</span>
+              <div><strong>Ваш заказ №12345</strong></div>
+            </div>
+          </section>
+          <section class="page-section checkout-finish">
+            <div class="cards-gallery">
+              <h2 class="section-header">Вам также будет интересно</h2>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide active">
+                    {% include "partials/_cards_3col.html" %}
+                  </div>
+                  <div class="swiper-slide">
+                    {% include "partials/_cards_3col.html" %}
+                  </div>
+                  <div class="swiper-slide">
+                    {% include "partials/_cards_3col.html" %}
+                  </div>
+                </div>
+                <div class="swiper-button-prev">{{mixins.icon('arrow_big_left')}}</div>
+                <div class="swiper-button-next">{{mixins.icon('arrow_big_right')}}</div>
+              </div>
+            </div>
+            <p><a class="link-button" href="#">Перейти в каталог</a></p>
+          </section>
+    </div>
+</main>
+{% include "partials/_popup_quick_view.html" %}
+{% endblock %}

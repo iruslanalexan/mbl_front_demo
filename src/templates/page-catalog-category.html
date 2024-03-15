@@ -1,0 +1,409 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+	<div class="wrapper">
+		<div class="breadcrumbs">
+			<ul class="breadcrumbs-list">
+				<li class="breadcrumbs-item">
+					<a href="/page-main.html" class="breadcrumbs-link">Главная</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a class="breadcrumbs-link">Диваны и кресла</a>
+				</li>
+			</ul>
+		</div>
+		<h1 class="page-header page-header-category">диваны и кресла</h1>
+		<p>Широкий ассортимент товаров для интерьерных решений от <br class="hidden-mobile">отечественных и импортных производителей</p>
+		<nav class="cat-navigation">
+			<ul class="catalog-list catalog-list--horiz">
+				<li class="catalog-item">
+					<a class="catalog-link active">
+						<span class="catalog-icon">
+							<svg class="icon" width="58" height="41">
+								<use xlink:href="img/sprite.svg#icon-catalog1"></use>
+							</svg>
+						</span>
+						<span class="catalog-category">Угловые диваны</span>
+					</a>
+				</li>
+				<li class="catalog-item">
+					<a href="#" class="catalog-link">
+						<span class="catalog-icon">
+							<svg class="icon" width="53" height="23">
+								<use xlink:href="img/sprite.svg#icon-catalog2"></use>
+							</svg>
+						</span>
+						<span class="catalog-category">Прямые диваны</span>
+					</a>
+				</li>
+				<li class="catalog-item">
+					<a href="#" class="catalog-link">
+						<span class="catalog-icon">
+							<svg class="icon" width="50" height="37">
+								<use xlink:href="img/sprite.svg#icon-catalog5"></use>
+							</svg>
+						</span>
+						<span class="catalog-category">Пуфы</span>
+					</a>
+				</li>
+				<li class="catalog-item">
+					<a href="#" class="catalog-link">
+						<span class="catalog-icon">
+							<svg class="icon" width="57" height="29">
+								<use xlink:href="img/sprite.svg#icon-catalog3"></use>
+							</svg>
+						</span>
+						<span class="catalog-category">Модульные диваны</span>
+					</a>
+				</li>
+				<li class="catalog-item">
+					<a href="#" class="catalog-link">
+						<span class="catalog-icon">
+							<svg class="icon" width="36" height="26">
+								<use xlink:href="img/sprite.svg#icon-catalog4"></use>
+							</svg>
+						</span>
+						<span class="catalog-category">Кресла</span>
+					</a>
+				</li>
+				<li class="catalog-item">
+					<a href="#" class="catalog-link">
+						<span class="catalog-icon">
+							<svg class="icon" width="58" height="41">
+								<use xlink:href="img/sprite.svg#icon-catalog6"></use>
+							</svg>
+						</span>
+						<span class="catalog-category">Конструктор диванов</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="popular-searches">
+			<div class="header">Популярные запросы</div>
+			<ul class="pop-search-list">
+				<li class="pop-search-item">
+					<a href="#" class="pop-search-link">#Модерн</a>
+				</li>
+				<li class="pop-search-item">
+					<a href="#" class="pop-search-link">#Скандинавский стиль</a>
+				</li>
+				<li class="pop-search-item">
+					<a href="#" class="pop-search-link">#из массива</a>
+				</li>
+				<li class="pop-search-item">
+					<a href="#" class="pop-search-link">#из нержавеющей стали</a>
+				</li>
+				<li class="pop-search-item">
+					<a href="#" class="pop-search-link">#кожаный</a>
+				</li>
+				<li class="pop-search-item">
+					<a href="#" class="pop-search-link">#из рогожки</a>
+				</li>
+				<li class="pop-search-item">
+					<a href="#" class="pop-search-link">#выбеленное дуб</a>
+				</li>
+				<li class="pop-search-item">
+					<a href="#" class="pop-search-link">#черный глянец</a>
+				</li>
+				<li class="pop-search-item">
+					<a href="#" class="pop-search-link">#цветные</a>
+				</li>
+			</ul>
+		</div>
+		<div class="filters-fixed">
+			<div class="filters js-catalog-filter" data-filter-to="js-filter-results">
+				<a href="#" class="trigger-dropdown js-dropdown-trigger">
+					<span class="filters-icon">{{mixins.icon('filter')}}</span>
+					<span class="trigger-dropdown-text">
+						Подобрать по параметрам <span class="ld-icon">{{mixins.icon('dropdown_link')}}</span>
+					</span>
+				</a>
+				<div class="dropdown filters-container js-dropdown">
+					<form action="" class="filters-form">
+						<div class="filters-column">
+							<div class="filters-row">
+								<div class="filters-header">Размер</div>
+								<div class="filters-cat">
+									<span class="text">Длина</span>
+									<span class="hint">{{mixins.icon('hint')}}</span>
+									<span class="cat-icon-length"><img src="./img/length.svg" alt=""></span>
+								</div>
+								<div class="filters-range">
+									<div class="filters-ranges">
+										<div class="filters-range-item">
+											<label for="length-from" class="text">от</label>
+											<input class="length-from" type="text" name="length-from" id="length-from" value="135" readonly>
+										</div>
+										<div class="filters-range-item">
+											<label for="length-to" class="text">до</label>
+											<input class="length-to" type="text" name="length-to" id="length-to" value="280" readonly>
+										</div>
+									</div>
+									<div class="filters-slider js-length-range"></div>
+								</div>
+								<div class="filters-cat">
+									<span class="text">Ширина</span>
+									<span class="hint">{{mixins.icon('hint')}}</span>
+									<span class="cat-icon-width"><img src="./img/width.svg" alt=""></span>
+								</div>
+								<div class="filters-range">
+									<div class="filters-ranges">
+										<div class="filters-range-item">
+											<label for="width-from" class="text">от</label>
+											<input class="width-from" type="text" name="width-from" id="width-from" value="72">
+										</div>
+										<div class="filters-range-item">
+											<label for="width-to" class="text">до</label>
+											<input class="width-to" type="text" name="width-to" id="width-to" value="120">
+										</div>
+									</div>
+									<div class="filters-slider js-width-range"></div>
+								</div>
+
+							</div>
+							<div class="filters-row">
+								<div class="filters-header">Цена</div>
+								<div class="filters-range">
+									<div class="filters-ranges">
+										<div class="filters-range-item">
+											<label for="price-from" class="text">от</label>
+											<input class="price-from" type="text" name="price-from" id="price-from" value="2300">
+										</div>
+										<div class="filters-range-item">
+											<label for="price-to" class="text">до</label>
+											<input class="price-to" type="text" name="price-to" id="price-to" value="56200">
+										</div>
+									</div>
+									<div class="filters-slider js-price-range"></div>
+								</div>
+
+							</div>
+						</div>
+						<div class="filters-column filters-column--sb">
+							<div>
+								<div class="filters-header">Цвет</div>
+								<div class="filters-colors">
+									<div class="form-row form-row--checkbox">
+										<div class="form-checkbox">
+											<input type="checkbox" name="color[]" id="color1" />
+											<label for="color1">Молочные </label>
+										</div>
+									</div>
+									<div class="form-row form-row--checkbox">
+										<div class="form-checkbox">
+											<input type="checkbox" name="color[]" id="color2" />
+											<label for="color2">Шоколадные</label>
+										</div>
+									</div>
+									<div class="form-row form-row--checkbox">
+										<div class="form-checkbox">
+											<input type="checkbox" name="color[]" id="color3" />
+											<label for="color3">Тёмно-серые</label>
+										</div>
+									</div>
+									<div class="form-row form-row--checkbox">
+										<div class="form-checkbox">
+											<input type="checkbox" name="color[]" id="color4" />
+											<label for="color4">Светло-серые</label>
+										</div>
+									</div>
+									<div class="form-row form-row--checkbox">
+										<div class="form-checkbox">
+											<input type="checkbox" name="color[]" id="color5" />
+											<label for="color5">Яркие</label>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="hidden-mobile">
+								<button type="submit" class="button"><span class="button-text">Применить</span><svg data-text="Применить" width="0" height="0"></svg></button>
+							</div>
+						</div>
+						<div class="filters-column">
+							<div class="filters-header">Наличие механизма</div>
+							<div class="filters-mech">
+								<div class="form-row form-row--checkbox">
+									<div class="form-checkbox">
+										<input type="checkbox" name="mech[]" id="mech1" />
+										<label for="mech1">Есть</label>
+									</div>
+									<div class="form-checkbox">
+										<input type="checkbox" name="mech[]" id="mech2" />
+										<label for="mech2">Нет</label>
+									</div>
+								</div>
+							</div>
+							<div class="filters-delivery">
+								<div class="form-row form-row--checkbox">
+									<div class="form-checkbox">
+										<input type="checkbox" name="delivery_hab" id="del1" />
+										<label for="del1">Наличие в Хабаровске</label>
+									</div>
+								</div>
+								<div class="form-row form-row--checkbox">
+									<div class="form-checkbox">
+										<input type="checkbox" name="delivery_other" id="del2" />
+										<label for="del2">Доставка из других городов</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hidden-desktop">
+							<button type="submit" class="button"><span class="button-text">Применить</span><svg data-text="Применить" width="0" height="0"></svg></button>
+						</div>
+					</form>
+					<button class="filters-close js-dropdown-close">{{mixins.icon('close')}}</button>
+				</div>
+				<div class="filters-right">
+					<div class="filters-sort">
+						<span class="text">Сортировать</span>
+						<div class="filter-sort-by">
+							<a href="#" class="trigger-dropdown js-dropdown-trigger">
+								<span class="trigger-dropdown-text">
+									по возрастанию цены <span class="ld-icon">{{mixins.icon('dropdown_link')}}</span>
+								</span>
+							</a>
+							<ul class="dropdown filter-sorts-list js-dropdown">
+								<li class="filter-sorts-item"><a href="#" class="filter-sorts-link">По возрастанию цены</a>
+								</li>
+								<li class="filter-sorts-item"><a href="#" class="filter-sorts-link">По убыванию цены</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<a href="#" class="filters-reset link-button">Сбросить фильтры</a>
+				</div>
+			</div>
+		</div>
+		<div class="js-filter-results filter-results">
+			<div class="catalog-section">
+				<h2 class="section-header">Диван "Менли"</h2>
+				{% include "partials/_cards_4col.html" %}
+			</div>
+			<div class="catalog-section">
+				<h2 class="section-header">Диван "Гритон"</h2>
+				{% include "partials/_cards_4col.html" %}
+			</div>
+			<div class="catalog-section">
+				<h2 class="section-header">Диван "Орнен"</h2>
+				{% include "partials/_cards_4col.html" %}
+			</div>
+			<section class="promo-section full-width">
+				<picture class="promo-section-image full-width-picture">
+					<source srcset="img/catalog-promo@2x.jpg 2x" />
+					<img src="./img/catalog-promo@2x.png" />
+					<div class="tooltips-container">
+						<button class="tooltip-button" style="top: 23%; left: 38%;">
+							<svg fill="none">
+								<use xlink:href="img/sprite.svg#icon-tooltip-eye"></use>
+							</svg>
+							<div class="tooltip flex-col">
+								<div class="flex-row">
+									<div class="type">диван</div>
+									<div class="discount">-10%</div>
+								</div>
+								<div class="flex-row">
+									<h2 class="h1 header">Verona Denim Blue</h2>
+								</div>
+								<div class="arrow"></div>
+							</div>
+						</button>
+						<button class="tooltip-button" style="top: 38%; left: 61%;">
+							<svg fill="none">
+								<use xlink:href="img/sprite.svg#icon-tooltip-eye"></use>
+							</svg>
+							<div class="tooltip flex-col">
+								<div class="flex-row">
+									<div class="type">диван</div>
+									<div class="discount">-10%</div>
+								</div>
+								<div class="flex-row">
+									<h2 class="h1 header">Verona Denim Blue</h2>
+								</div>
+								<div class="arrow"></div>
+							</div>
+						</button>
+						<button class="tooltip-button" style="top: 52%; left: 64%;">
+							<svg fill="none">
+								<use xlink:href="img/sprite.svg#icon-tooltip-eye"></use>
+							</svg>
+							<div class="tooltip flex-col">
+								<div class="flex-row">
+									<div class="type">диван</div>
+									<div class="discount">-10%</div>
+								</div>
+								<div class="flex-row">
+									<h2 class="h1 header">Verona Denim Blue</h2>
+								</div>
+								<div class="arrow"></div>
+							</div>
+						</button>
+					</div>
+				</picture>
+				<div class="promo-description">
+					<h2 class="section-header section-header--width">ВАША СОБАКА НИКОГДА НЕ ИСПОРТИТ ЭТОТ ДИВАН</h2>
+					<p class="promo-section-text">Широкий ассортимент товаров для интерьерных решений от отечественных и
+						импортных производителей</p>
+					<div class="cat-in-action"><a href="#">Подробнее</a></div>
+				</div>
+			</section>
+			<div class="catalog-section">
+				{% include "partials/_8cards_4col.html" %}
+			</div>
+			<div class="filter-results-refresh">
+				<a href="#">{{mixins.icon('refresh')}}</a>
+			</div>
+		</div>
+	</div>
+	<section class="catalog-footer">
+		<div class="wrapper">
+			<div class="catalog-footer-text">Таким образом сложившаяся структура организации в значительной степени
+				обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Не следует,
+				однако забывать, что постоянное информационно&minus;пропагандистское обеспечение нашей деятельности
+				требуют от нас анализа систем массового участия. Значимость этих проблем настолько очевидна, что
+				реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании
+				новых предложений.</div>
+			<section class="promo-section full-width">
+				<picture class="promo-section-image full-width-picture">
+					<source srcset="img/cat_in_box@2x.jpg 2x" />
+					<img src="./img/cat_in_box.jpg" />
+
+				</picture>
+				<div class="promo-description">
+					<ul class="promo-checklist">
+						<li class="promo-checklist-item">Подойдет для создание интерьера, удовлетворяющего всем
+							требованиям</li>
+						<li class="promo-checklist-item">Функциональность на высшем уровне</li>
+						<li class="promo-checklist-item">Лучшее качество и удобство</li>
+						<li class="promo-checklist-item">Качественная и удобная продукция удобна&nbsp;как для отдыха,
+							так и для сна</li>
+						<li class="promo-checklist-item">Функциональность на высшем уровне</li>
+					</ul>
+				</div>
+			</section>
+			<div class="catalog-footer-seo">
+				<h2 class="section-header">создайте уют в своей квартире</h2>
+				<div class="catalog-seo-text">
+					<div>
+						Кресло— мебель, предназначенная для сидения одного человека, со спинкой и сиденьем с
+						подлокотниками или без них.
+						Кресло отличается от табурета наличием спинки. Разграничение между стулом и креслом —
+						комфортабельность изделия, рабочее кресло при этом может вовсе не отличаться от рабочего стула.
+						В то же время кресло может рассматриваться как род стула.
+						Кресла — самый распространённый и массовый вид мебели, существует множество видов, моделей и
+						фасонов стульев. Возможно, стул больше всех других предметов мебели подвержен влиянию моды.
+					</div>
+					<img src="./img/cat.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+{% include "partials/_popup_quick_view.html" %}
+{% endblock %}

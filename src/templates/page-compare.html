@@ -1,0 +1,587 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+	<div class="wrapper">
+		<div class="breadcrumbs">
+			<ul class="breadcrumbs-list">
+				<li class="breadcrumbs-item">
+					<a href="#" class="breadcrumbs-link">Главная</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a class="breadcrumbs-link">Сравнение</a>
+				</li>
+			</ul>
+		</div>
+		<h1 class="page-header">Сравнение</h1>
+		<section class="page-section">
+			<p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке форм развития.</p>
+		</section>
+		<section class="page-section map-margin-section">
+			<nav class="page-subnav">
+				<ul class="page-subnav-list">
+					<li class="page-subnav-list-item">
+						<a class="page-subnav-link">Стулья 4</a>
+					</li>
+					<li class="page-subnav-list-item">
+						<a href="#" class="page-subnav-link">Диваны 1</a>
+					</li>
+					<li class="page-subnav-list-item">
+						<a href="#" class="page-subnav-link">Сравнить все</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="page-compare">
+				<div class="page-compare__checkbox">
+					<div class="form-checkbox">
+						<input type="checkbox" name="check" id="check1" class="js-show-differences" />
+						<label for="check1">Показать только различия</label>
+					</div>
+				</div>
+				<div class="page-compare__table">
+					<div class="page-compare__table__head">
+						<div class="page-compare__table__col">
+							<div class="page-compare__table__col__item">
+								<div class="page-compare__table__label">
+									Изображение
+								</div>
+							</div>
+							<div class="page-compare__table__col__item">
+								<div class="page-compare__table__label">
+									Название
+								</div>
+							</div>
+							<div class="page-compare__table__col__item">
+								<div class="page-compare__table__label">
+									Стоимость
+								</div>
+							</div>
+							<div class="page-compare__table__col__item">
+								<div class="page-compare__table__label">
+									Акции и спец предложения
+								</div>
+							</div>
+							<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+								<div class="page-compare__table__text">
+									Ширина
+								</div>
+							</div>
+							<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+								<div class="page-compare__table__text">
+									Высота
+								</div>
+							</div>
+							<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+								<div class="page-compare__table__text">
+									Объем
+								</div>
+							</div>
+							<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+								<div class="page-compare__table__text">
+									Количество мест
+								</div>
+							</div>
+							<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+								<div class="page-compare__table__text">
+									Количество в упаковке
+								</div>
+							</div>
+							<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+								<div class="page-compare__table__text">
+									Материал каркаса
+								</div>
+							</div>
+							<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+								<div class="page-compare__table__text">
+									Материал сиденья
+								</div>
+							</div>
+							<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+								<div class="page-compare__table__text">
+									Цвет сиденья
+								</div>
+							</div>
+							<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+								<div class="page-compare__table__text">
+									Глубина
+								</div>
+							</div>
+							<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+								<div class="page-compare__table__text">
+									Ширина сиденья
+								</div>
+							</div>
+							<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+								<div class="page-compare__table__text">
+									Глубина сиденья
+								</div>
+							</div>
+							<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+								<div class="page-compare__table__text">
+									Высота сиденья
+								</div>
+							</div>
+							<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+								<div class="page-compare__table__text">
+									Материал ножек
+								</div>
+							</div>
+							<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+								<div class="page-compare__table__text">
+									Цвет ножек
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page-compare__table__fixed"></div>
+					<div class="page-compare__table__slider">
+						<div class="swiper-button-prev swiper-button-prev--no-back">{{mixins.icon('arrow_big_left')}}</div>
+						<div class="swiper-button-next swiper-button-next--no-back">{{mixins.icon('arrow_big_right')}}</div>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="page-compare__table__col">
+										<button class="page-compare__table__remove" type="button"></button>
+										<button class="page-compare__table__fix" type="button">{{mixins.icon('needle')}}</button>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__image">
+												<img src="img/card-img.png" alt="">
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__name">
+												<a href="#">Название товара</a>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__info">
+												<div class="page-compare__table__price">
+													24 990 р.
+												</div>
+												<div class="page-compare__table__buy">
+													<a data-fancybox href="#add-to-basket" class="button"><span class="button-text">Купить</span><svg data-text="Купить" width="0" height="0"></svg></a>
+												</div>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">46 см</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">82 см</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">0</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">1</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">4</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Массив бука / металл</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Пластик</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Оранжевый</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">50</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">46</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">42</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">45</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Массив бука / металл</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Бук</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="page-compare__table__col">
+										<button class="page-compare__table__remove" type="button"></button>
+										<button class="page-compare__table__fix" type="button">{{mixins.icon('needle')}}</button>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__image">
+												<img src="img/card-img.png" alt="">
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__name">
+												<a href="#">Название товара <br>в&nbsp;две строки</a>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__info">
+												<div class="page-compare__table__price">
+													24 990 р.  <span class="page-compare__table__price__info">Выгода 10 000 р.</span>
+													<div class="page-compare__table__price__old">34 990 р.</div>
+												</div>
+												<div class="page-compare__table__buy">
+													<a data-fancybox href="#add-to-basket" class="button"><span class="button-text">Купить</span><svg data-text="Купить" width="0" height="0"></svg></a>
+												</div>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__discount">
+												<span>10%</span>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">46 см</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">82 см</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">0</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">1</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">4</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Массив бука / металл</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Пластик</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Оранжевый</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">50</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">46</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">42</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">45</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Массив бука / металл</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Бук</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="page-compare__table__col">
+										<button class="page-compare__table__remove" type="button"></button>
+										<button class="page-compare__table__fix" type="button">{{mixins.icon('needle')}}</button>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__image">
+												<img src="img/card-img.png" alt="">
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__name">
+												<a href="#">Название товара</a>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__info">
+												<div class="page-compare__table__price">
+													24 990 р.
+												</div>
+												<div class="page-compare__table__buy">
+													<a data-fancybox href="#add-to-basket" class="button"><span class="button-text">Купить</span><svg data-text="Купить" width="0" height="0"></svg></a>
+												</div>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">46 см</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">82 см</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">0</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">1</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">4</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Массив бука / металл</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Пластик</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Оранжевый</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">50</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">46</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">42</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">45</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Массив бука / металл</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Бук</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="page-compare__table__col">
+										<button class="page-compare__table__remove" type="button"></button>
+										<button class="page-compare__table__fix" type="button">{{mixins.icon('needle')}}</button>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__image">
+												<img src="img/card-img.png" alt="">
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__name">
+												<a href="#">Название товара <br>в&nbsp;две строки</a>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__info">
+												<div class="page-compare__table__price">
+													24 990 р.  <span class="page-compare__table__price__info">Выгода 10 000 р.</span>
+													<div class="page-compare__table__price__old">34 990 р.</div>
+												</div>
+												<div class="page-compare__table__buy">
+													<a data-fancybox href="#add-to-basket" class="button"><span class="button-text">Купить</span><svg data-text="Купить" width="0" height="0"></svg></a>
+												</div>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__discount">
+												<span>10%</span>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">46 см</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">82 см</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">0</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">1</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">4</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Массив бука / металл</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Пластик</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Оранжевый</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">50</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">46</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">42</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">45</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Массив бука / металл</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Бук</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="page-compare__table__col">
+										<button class="page-compare__table__remove" type="button"></button>
+										<button class="page-compare__table__fix" type="button">{{mixins.icon('needle')}}</button>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__image">
+												<img src="img/card-img.png" alt="">
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__name">
+												<a href="#">Название товара</a>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__info">
+												<div class="page-compare__table__price">
+													24 990 р.
+												</div>
+												<div class="page-compare__table__buy">
+													<a data-fancybox href="#add-to-basket" class="button"><span class="button-text">Купить</span><svg data-text="Купить" width="0" height="0"></svg></a>
+												</div>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">46 см</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">82 см</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">0</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">1</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">4</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Массив бука / металл</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Пластик</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Оранжевый</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">50</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">46</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">42</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">45</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Массив бука / металл</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Бук</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="page-compare__table__col">
+										<button class="page-compare__table__remove" type="button"></button>
+										<button class="page-compare__table__fix" type="button">{{mixins.icon('needle')}}</button>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__image">
+												<img src="img/card-img.png" alt="">
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__name">
+												<a href="#">Название товара <br>в&nbsp;две строки</a>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__info">
+												<div class="page-compare__table__price">
+													24 990 р.  <span class="page-compare__table__price__info">Выгода 10 000 р.</span>
+													<div class="page-compare__table__price__old">34 990 р.</div>
+												</div>
+												<div class="page-compare__table__buy">
+													<a data-fancybox href="#add-to-basket" class="button"><span class="button-text">Купить</span><svg data-text="Купить" width="0" height="0"></svg></a>
+												</div>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item">
+											<div class="page-compare__table__discount">
+												<span>10%</span>
+											</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">46 см</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">82 см</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">0</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">1</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">4</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Массив бука / металл</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Пластик</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Оранжевый</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">50</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">46</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">42</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">45</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Массив бука / металл</div>
+										</div>
+										<div class="page-compare__table__col__item page-compare__table__col__item--not-differences">
+											<div class="page-compare__table__text">Бук</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+</main>
+
+{% endblock %}

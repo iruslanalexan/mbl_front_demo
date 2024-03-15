@@ -1,0 +1,41 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+    <div class="wrapper">
+        <section class="page-section">
+            {% set links = [
+                { title: 'Главная', href: '/' },
+                { title: 'Оформление заказа', href: '' }
+            ] %}
+            {% include './partials/_breadcrumbs.html' %}
+        </section>
+        <h1>Заказ не оформлен</h1>
+        <section class="page-section basket-details checkout-background-section">
+          <div class="bd-col flex-container">
+            <span>К сожалению произошла ошибка при оформлении заказа! <br> Свяжитесь с нашим менеджером для уточнения причины ошибки.</span>
+            <p><a href="#" class="link-button">< Вернуться к корзине</a></p>
+          </div>
+          <div class="bd-col section-bg">
+            <span>8 (800) 100-10-00</span>
+            <div class="date-container">
+              <div class="flex-container">
+                <p>Пн - Пт</p>
+                <p>09:00 - 20:00</p>
+              </div>
+              <div class="flex-container">
+                <p>Сб - Вс</p>
+                <p>10:00 - 22:00</p>
+              </div>
+            </div>
+            <a data-fancybox data-src="#back-message" href="javascript:;" class="button"><span class="button-text">Обратная связь</span><svg data-text="Обратная связь" width="0" height="0"></svg></a>
+          </div>
+        </section>
+
+    </div>
+</main>
+
+{% endblock %}

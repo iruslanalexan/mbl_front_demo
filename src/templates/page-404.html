@@ -1,0 +1,24 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+  <div class="wrapper">
+    {% set links = [
+      { title: 'Главная', href: '/' },
+      { title: 'Страница не найдена', href: '' }
+    ] %}
+    {% include './partials/_breadcrumbs.html' %}
+    <section class="page-section">
+        <div class="p404">
+            <div class="p404-background"></div>
+            <p>К сожалению, такой страницы не существует. Вероятно был неправильно набран адрес или страница была удалена. Начните работу с <a href="#">главной страницы сайта</a></p>
+            <a href="#" class="button"><span class="button-text">Перейти в каталог</span><svg data-text="Перейти в каталог" width="0" height="0"></svg></a>
+        </div>
+    </section>
+  </div>
+</main>
+
+{% endblock %}

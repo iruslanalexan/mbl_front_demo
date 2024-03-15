@@ -1,0 +1,29 @@
+.basket-details {
+    .bd-col {
+        &.flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    .section-bg {
+        padding: 15px;
+        text-align: center;
+        .button {
+            display: inline-block;
+            &::before {
+                display: none;
+            }
+        }
+        .date-container {
+            margin: 15px 0;
+        }
+        .flex-container {
+            > p {
+                flex: 1;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

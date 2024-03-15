@@ -1,0 +1,13 @@
+<div class="breadcrumbs">
+  <ul class="breadcrumbs-list">
+    {% for link in links %}
+    <li class="breadcrumbs-item">
+      {% if link.href != '' %}
+      <a href="{{ link.href }}" class="breadcrumbs-link">{{ link.title }}</a>
+      {% else %}
+      <a class="breadcrumbs-link">{{ link.title }}</a>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>

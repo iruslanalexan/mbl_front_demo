@@ -1,0 +1,107 @@
+.popup-phone-container {
+    display: none;
+    max-width: 450px;
+    
+    .button {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .form-text {
+        font-size: 12px;
+    }
+}
+.form-row {
+    &.align-center {
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+.popup-back-container {
+    display: none;
+    max-width: 500px;
+    
+    .form-text {
+        font-size: 12px;
+    }
+
+    .popup-back-container-success {
+        display: none;
+    }
+
+    form {
+        &.is-success-send {
+            .popup-back-container-form {
+                display: none;
+            }
+            .popup-back-container-success {
+                display: block;
+            }
+        }
+    }
+}
+
+.popup-basket-container {
+    display: none;
+    width: 100%;
+    max-width: 1040px;
+    
+    .form-text {
+        font-size: 12px;
+    }
+
+    .basket-items .b-items-container .b-item {
+        padding-top: 0;
+        box-shadow: none;
+
+        .bi-content .bic-header {
+            margin-top: 0;
+        }
+    }
+
+    .basket-items .b-items-container .b-item .bi-content .bic-details .bicd-counter {
+        @media (max-width: $sm - 1) {
+            width: 110px;
+        }
+    }
+
+    .basket-items .b-items-container .b-item .bi-content .bic-details .bicd-price:last-child {
+        @media (max-width: $sm - 1) {
+            margin-left: 20px;
+        }
+    }
+
+    .basket-details {
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 60px;
+
+        .button {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .bd-col span b {
+            white-space: nowrap;
+
+            @media (min-width: $sm) {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .card-hover {
+        display: none !important;
+    }
+}
+
+.fancybox-content {
+    @media (max-width: $sm - 1) {
+        padding: 20px;
+    }
+}

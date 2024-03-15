@@ -1,0 +1,203 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+	<div class="wrapper">
+		<div class="breadcrumbs">
+			<ul class="breadcrumbs-list">
+				<li class="breadcrumbs-item">
+					<a href="#" class="breadcrumbs-link">Главная</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a href="#" class="breadcrumbs-link">Статьи</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a class="breadcrumbs-link">Страница акции</a>
+				</li>
+			</ul>
+		</div>
+		<h1 class="page-header">Страница акции</h1>
+
+		<section class="promo-section promo-section--article full-width action-date">
+			<div class="action-date__year">
+				<div class="action-date__year__number">5 дней</div>
+				до завершения акции
+			</div>
+			<picture class="full-width-picture">
+				<img src="img/cooperation.jpg" />
+			</picture>
+		</section>
+
+		<section class="page-section">
+			<p>Идейные соображения высшего порядка, а также укрепление и развитие структуры требуют определения и
+				уточнения форм развития. Идейные соображения высшего порядка, а также начало повседневной работы по
+				формированию позиции представляет собой интересный эксперимент проверки существенных финансовых и
+				административных условий. Таким образом начало повседневной работы по формированию позиции обеспечивает
+				широкому кругу (специалистов) участие в формировании систем массового участия. Таким образом реализация
+				намеченных плановых заданий в значительной степени обуславливает создание существенных финансовых и
+				административных условий. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных
+				форм деятельности позволяет выполнять важные задания по разработке новых предложений.</p>
+			<p>Задача организации, в особенности же начало повседневной работы по формированию позиции требуют
+				определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Повседневная
+				практика показывает, что сложившаяся структура организации играет важную роль в формировании позиций,
+				занимаемых участниками в отношении поставленных задач. С другой стороны укрепление и развитие структуры
+				представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении
+				поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности влечет за собой
+				процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Равным
+				образом рамки и место обучения кадров позволяет выполнять важные задания по разработке модели развития.
+			</p>
+			<p class="show-or-hide-content">Идейные соображения высшего порядка, а также укрепление и развитие структуры
+				требуют определения и уточнения форм развития. Идейные соображения высшего порядка, а также начало
+				повседневной работы по формированию позиции представляет собой интересный эксперимент проверки
+				существенных финансовых и административных условий. Таким образом начало повседневной работы по
+				формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании систем массового
+				участия. Таким образом реализация намеченных плановых заданий в значительной степени обуславливает
+				создание существенных финансовых и административных условий. Значимость этих проблем настолько очевидна,
+				что дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке
+				новых предложений.</p>
+			<br>
+			<a href="#" class="js-show-or-hide" data-on="Скрыть условия" data-off="Условия проведения акции"
+				data-target=".show-or-hide-content">Условия проведения акции</a>
+		</section>
+
+		<section class="social-link">
+			<hr>
+			<div class="flex-col">
+				<div class="footer-socials">
+					<p>Поделиться</p>
+					<ul class="footer-socials-list">
+						<li class="footer-socials-item">
+							<a href="#" class="footer-socials-link">{{mixins.icon('vk')}}</a>
+						</li>
+						<li class="footer-socials-item">
+							<a href="#" class="footer-socials-link">{{mixins.icon('instagram')}}</a>
+						</li>
+						<li class="footer-socials-item">
+							<a href="#" class="footer-socials-link">{{mixins.icon('youtube')}}</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="page-section section-margin">
+			<h2 class="section-header">Товары из акции</h2>
+			{% include "partials/_cards_3col.html" %}
+		</section>
+
+		<section class="page-section article-gallery">
+			<div class="cards-gallery">
+				<h2 class="section-header">Другие акции</h2>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide active">
+							<section class="grid-section article-grid">
+								<div class="row-grid-2 container-flex">
+									<div>
+										<div class="overflow-container">
+											<img src="img/benefit-img1.jpg" alt="">
+											<div class="overflow-section">
+												<div class="badget">13.02.2018</div>
+												<h3><a href="#">Название акции</a></h3>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="overflow-container">
+											<img src="img/benefit-img2.jpg" alt="">
+											<div class="overflow-section">
+												<div class="badget">13.02.2018</div>
+												<h3><a href="#">Название акции</a></h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="swiper-slide">
+							<section class="grid-section article-grid">
+								<div class="row-grid-2 container-flex">
+									<div>
+										<div class="overflow-container">
+											<img src="img/benefit-img1.jpg" alt="">
+											<div class="overflow-section">
+												<div class="badget">13.02.2018</div>
+												<h3><a href="#">Название акции</a></h3>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="overflow-container">
+											<img src="img/benefit-img2.jpg" alt="">
+											<div class="overflow-section">
+												<div class="badget">13.02.2018</div>
+												<h3><a href="#">Название акции</a></h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="swiper-slide">
+							<section class="grid-section article-grid">
+								<div class="row-grid-2 container-flex">
+									<div>
+										<div class="overflow-container">
+											<img src="img/benefit-img1.jpg" alt="">
+											<div class="overflow-section">
+												<div class="badget">13.02.2018</div>
+												<h3><a href="#">Название акции</a></h3>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="overflow-container">
+											<img src="img/benefit-img2.jpg" alt="">
+											<div class="overflow-section">
+												<div class="badget">13.02.2018</div>
+												<h3><a href="#">Название акции</a></h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="swiper-button-prev">{{mixins.icon('arrow_big_left')}}</div>
+					<div class="swiper-button-next">{{mixins.icon('arrow_big_right')}}</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-section">
+			<div class="detailed-info-block info-articles">
+				<form action="">
+					<div class="f-col">
+						<p>Подпишитесь на рассылку информационных материалов!</p>
+					</div>
+					<div class="f-col">
+						<div class="form-row">
+							<input class="form-input" type="text" name="email" id="email" placeholder="E-mail">
+							<div class="form-checkbox  form-row--checkbox">
+								<input type="checkbox" name="approve-check4" id="approve-check4">
+								<label for="approve-check4">я ознакомлен и согласен <a href="#" class="link-button">«C
+										условиями сбора и обработки персональных данных».</a></label>
+							</div>
+						</div>
+					</div>
+					<div class="f-col">
+						<a href="#" class="button"><span class="button-text">Подписаться</span><svg data-text="Подписаться" width="0" height="0"></svg></a>
+					</div>
+				</form>
+			</div>
+		</section>
+
+	</div>
+
+</main>
+{% include "partials/_popup_quick_view.html" %}
+{% endblock %}

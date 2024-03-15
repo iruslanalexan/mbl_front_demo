@@ -1,0 +1,216 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+  <div class="wrapper">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Пункты выдачи</a>
+        </li>
+      </ul>
+    </div>
+	<h1 class="page-header">Пункты выдачи</h1>
+	<section class="page-section page-shops">
+		<div class="page-shops__header">
+			<div class="page-shops__header__select">
+				<select>
+					<option selected="" value="Все">Хабаровск</option>
+					<option value="?change-city=Хабаровск">Хабаровск</option>
+					<option value="?change-city=Хабаровск">Хабаровск</option>
+					<option value="?change-city=Хабаровск">Хабаровск</option>
+					<option value="?change-city=Хабаровск">Хабаровск</option>
+					<option value="?change-city=Хабаровск">Хабаровск</option>
+					<option value="?change-city=Хабаровск">Хабаровск</option>
+					<option value="?change-city=Хабаровск">Хабаровск</option>
+					<option value="?change-city=Хабаровск">Хабаровск</option>
+				</select>
+			</div>
+			<ul class="page-shops__header__type">
+				<li>
+					<a href="#" data-pane="list">
+						<img src="img/list2.svg" alt="">
+						Списком
+					</a>
+				</li>
+				<li>
+					<a href="#" data-pane="map">
+						<img src="img/pin.svg" alt="">
+						На карте
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="page-shops__content">
+			<div class="page-shops__pane" data-pane="map">
+				<div class="page-shops__map-item js-map-item"
+					data-name='Салон "Themebel"'
+					data-lat="48.475379"
+					data-lng="135.080721"
+					data-address="ул. Гамарника, 72а, Хабаровск, Хабаровский край <br>8 (800) 100-10-00"
+					data-schedule='[
+						["Пн-Чт", "10:00 - 19:00"],
+						["Пт", "10:00 - 18:00"],
+						["Сб-Вс", "Выходной"]
+					]'
+					data-pin="img/pin.svg"
+					></div>
+				<div class="page-shops__map-item js-map-item"
+					data-name='Мебельный центр "Ваша мебель"'
+					data-lat="48.47145"
+					data-lng="135.085437"
+					data-address="ул. Гамарника, 72а, Хабаровск, Хабаровский край<br>8 (800) 100-10-00"
+					data-schedule='[
+						["Пн-Чт", "10:00 - 19:00"],
+						["Пт", "10:00 - 18:00"],
+						["Сб-Вс", "Выходной"]
+					]'
+					data-pin="img/pin.svg"
+					></div>
+				<div class="page-shops__map-item js-map-item"
+					data-name='ТЦ "Дом мебели" 1 и 2 этаж'
+					data-lat="48.483904"
+					data-lng="135.062740"
+					data-address="ул. Гамарника, 72а, Хабаровск, Хабаровский край<br>8 (800) 100-10-00"
+					data-schedule='[
+						["Пн-Чт", "10:00 - 19:00"],
+						["Пт", "10:00 - 18:00"],
+						["Сб-Вс", "Выходной"]
+					]'
+					data-pin="img/pin.svg"
+					></div>
+				<div class="page-shops__map js-map">
+				</div>
+			</div>
+			<div class="page-shops__pane is-active" data-pane="list">
+				<div class="page-shops__list">
+					<table class="styled-table">
+						<thead>
+						  <tr>
+							<th>Название</th>
+							<th>Адрес</th>
+							<th>Режим работы</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>
+								<div class="page-shops__list__label">Название</div>
+								<a href="#" class="js-show-on-map" data-id="0"><b>Салон "Themebel"</b></a>
+							</td>
+							<td>
+								<div class="page-shops__list__label">Адрес</div>
+								ул. Гамарника, 72а, Хабаровск, Хабаровский край
+								<br>
+								8 (800) 100-10-00
+								<br>
+								<br>
+								<a href="#" class="js-show-on-map" data-id="0">Смотреть на карте</a>
+							</td>
+							<td>
+								<div class="page-shops__list__label">Режим работы</div>
+								<ul class="page-shops__schedule">
+									<li>
+										<b class="page-shops__schedule__key">Пн-Чт</b>
+										<span class="page-shops__schedule__value">10:00 - 19:00</span>
+									</li>
+									<li>
+										<b class="page-shops__schedule__key">Пт</b>
+										<span class="page-shops__schedule__value">10:00 - 18:00</span>
+									</li>
+									<li>
+										<b class="page-shops__schedule__key">Сб-Вс
+
+										</b>
+										<span class="page-shops__schedule__value">Выходной</span>
+									</li>
+								</ul>
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+								<div class="page-shops__list__label">Название</div>
+								<a href="#" class="js-show-on-map" data-id="1"><b>Мебельный центр "Ваша мебель"</b></a>
+							</td>
+							<td>
+								<div class="page-shops__list__label">Адрес</div>
+								ул. Гамарника, 72а, Хабаровск, Хабаровский край
+								<br>
+								8 (800) 100-10-00
+								<br>
+								<br>
+								<a href="#" class="js-show-on-map" data-id="1">Смотреть на карте</a>
+							</td>
+							<td>
+								<div class="page-shops__list__label">Режим работы</div>
+								<ul class="page-shops__schedule">
+									<li>
+										<span class="page-shops__schedule__value">
+											Ежедневно
+											<br>
+											с 09:00 до 21:00 часов
+										</span>
+									</li>
+								</ul>
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+								<div class="page-shops__list__label">Название</div>
+								<a href="#" class="js-show-on-map" data-id="2"><b>ТЦ "Дом мебели" 1 и 2 этаж</b></a>
+							</td>
+							<td>
+								<div class="page-shops__list__label">Адрес</div>
+								ул. Гамарника, 72а, Хабаровск, Хабаровский край
+								<br>
+								8 (800) 100-10-00
+								<br>
+								<br>
+								<a href="#" class="js-show-on-map" data-id="2">Смотреть на карте</a>
+							</td>
+							<td>
+								<div class="page-shops__list__label">Режим работы</div>
+								<ul class="page-shops__schedule">
+									<li>
+										<b class="page-shops__schedule__key">Пн-Чт</b>
+										<span class="page-shops__schedule__value">10:00 - 19:00</span>
+									</li>
+									<li>
+										<b class="page-shops__schedule__key">Пт</b>
+										<span class="page-shops__schedule__value">10:00 - 18:00</span>
+									</li>
+									<li>
+										<b class="page-shops__schedule__key">Сб-Вс
+
+										</b>
+										<span class="page-shops__schedule__value">Выходной</span>
+									</li>
+								</ul>
+							</td>
+						  </tr>
+						</tbody>
+					  </table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="page-section">
+		<div class="detailed-info-block">
+		  <div class="f-col">
+			<h2 class="h1">Если у вас возникли трудности <br>мы с&nbsp;радостью поможем!</h2>
+		  </div>
+		  <div class="f-col">
+			<a data-fancybox data-src="#back-message" href="javascript:;" class="button"><span class="button-text">Обратная связь</span><svg data-text="Обратная связь" width="0" height="0"></svg></a>
+		  </div>
+		</div>
+	  </section>
+  </div>
+</main>
+
+{% endblock %}

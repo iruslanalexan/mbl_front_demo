@@ -1,0 +1,92 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+  <div class="wrapper">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Акции</a>
+        </li>
+      </ul>
+    </div>
+    <h1 class="page-header">Акции</h1>
+    <nav class="page-subnav">
+      <ul class="page-subnav-list">
+        <li class="page-subnav-list-item">
+          <a href="page-actions.html" class="page-subnav-link">Спецпредложения</a>
+        </li>
+        <li class="page-subnav-list-item">
+          <a class="page-subnav-link">Товары</a>
+        </li>
+      </ul>
+    </nav>
+	<div class="catalog-section">
+		<div class="section-header">
+			<div class="reviews-select-container">
+				<select class="reviews-select">
+					<option selected="" value="Все">Все</option>
+					<option value="Диваны и кресла">Диваны и кресла</option>
+					<option value="Шкафы">Шкафы</option>
+					<option value="Мебель для гостиной">Мебель для гостиной</option>
+					<option value="Мебель для спальни">Мебель для спальни</option>
+					<option value="Мебель для прихожей">Мебель для прихожей</option>
+					<option value="Мебель для кухни">Мебель для кухни</option>
+					<option value="Мебель для детской">Мебель для детской</option>
+					<option value="Домашний кабинет">Домашний кабинет</option>
+				</select>
+			</div>
+		</div>
+	  {% include "partials/_8cards_4col.html" %}
+	</div>
+    <div class="filter-results-refresh section-margin">
+      <a href="#">{{mixins.icon('refresh')}}</a>
+    </div>
+    <section class="page-section">
+      <div class="form-row">
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item--prev"><a href="#"
+              class="pagination-action pagination-action--inactive">{{mixins.icon('arrow_big_left')}}</a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link pagination-link--current">1</a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+          <li class="pagination-item">...</li>
+          <li class="pagination-item"><a href="#" class="pagination-link">13</a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">14</a></li>
+          <li class="pagination-item"><a href="#" class="pagination-link">15</a></li>
+          <li class="pagination-item pagination-item--next"><a href="#"
+              class="pagination-action">{{mixins.icon('arrow_big_right')}}</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-section">
+      <div class="detailed-info-block info-articles">
+        <form action="">
+          <div class="f-col">
+            <p>Подпишитесь на рассылку информационных материалов!</p>
+          </div>
+          <div class="f-col">
+            <div class="form-row">
+                <input class="form-input" type="text" name="email" id="email"  placeholder="E-mail">
+                <div class="form-checkbox  form-row--checkbox">
+                  <input type="checkbox" name="approve-check4" id="approve-check4">
+                  <label for="approve-check4">я ознакомлен и согласен <a href="#" class="link-button">«C условиями сбора и обработки персональных данных».</a></label>
+                </div>
+            </div>
+          </div>
+          <div class="f-col">
+            <a href="#" class="button"><span class="button-text">Подписаться</span><svg data-text="Подписаться" width="0" height="0"></svg></a>
+          </div>
+      </form>
+      </div>
+    </section>
+  </div>
+</main>
+
+{% endblock %}

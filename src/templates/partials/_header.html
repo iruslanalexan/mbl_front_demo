@@ -1,0 +1,412 @@
+{% set mainNav = [{
+  name: 'Диваны и кресла',
+  icon: '../icons/couch.svg'
+}, {
+  name: 'Шкафы',
+  icon: '../icons/wardrobe.svg'
+},
+{
+  name:'Мебель для гостиной',
+  icon: '../icons/lounge.svg'
+},
+{
+  name: 'Мебель для спальни',
+  icon: '../icons/bedroom.svg'
+},
+{
+  name: 'Мебель для прихожей',
+  icon: '../icons/hall.svg'
+},
+{
+  name: 'Мебель для кухни',
+  icon: '../icons/kitchen.svg'
+},
+{
+  name: 'Мебель для детской',
+  icon: '../icons/kids.svg'
+},
+{
+  name: 'Домашний кабинет',
+  icon: '../icons/office.svg'
+},
+{
+  name: 'Акции',
+  icon: '../icons/specials.svg'
+}]
+%}
+
+{% set mainNavMobile = [{
+	name: 'Диваны и кресла',
+	icon: '../icons/couch-mobile.svg'
+  }, {
+	name: 'Шкафы',
+	icon: '../icons/wardrobe-mobile.svg'
+  },
+  {
+	name:'Мебель для гостиной',
+	icon: '../icons/lounge-mobile.svg'
+  },
+  {
+	name: 'Мебель для спальни',
+	icon: '../icons/bedroom-mobile.svg'
+  },
+  {
+	name: 'Мебель для прихожей',
+	icon: '../icons/hall-mobile.svg'
+  },
+  {
+	name: 'Мебель для кухни',
+	icon: '../icons/kitchen-mobile.svg'
+  },
+  {
+	name: 'Мебель для детской',
+	icon: '../icons/kids-mobile.svg'
+  },
+  {
+	name: 'Домашний кабинет',
+	icon: '../icons/office-mobile.svg'
+  },
+  {
+	name: 'Акции',
+	icon: '../icons/specials-mobile.svg'
+  }]
+  %}
+
+
+{% set topNav = [
+  'Каталог',
+  'Доставка и возврат',
+  'Пункт выдачи',
+  'Сотрудничество',
+  'Отзывы'
+]
+%}
+
+<header class="site-header">
+	<div class="wrapper js-header-wrapper hidden-768-down">
+		<nav class="main-nav js-nav">
+			<a href="/" class="logo">
+				<img class="logo-img-big" src="img/logo.svg" alt="Логотип компании TheMebel">
+				<img class="logo-img-small" src="img/logo2.svg" alt="Логотип компании TheMebel">
+			</a>
+			<ul class="main-nav-list">
+				{% for navItem in mainNav %}
+				<li class="main-nav-item">
+					<a href="#" class="main-nav-link">
+						<span class="main-nav-icon">{% include navItem.icon %}</span>
+						{{navItem.name}}
+					</a>
+					<div class="main-subnav-container">
+						<div class="subnav-header">{{navItem.name}}</div>
+						<nav class="main-subnav">
+							<ul class="main-subnav-list">
+								<li class="main-nav-item">
+									<a href="#" class="main-subnav-link">
+										<span class="main-nav-icon">{% include '../icons/couch1.svg' %}</span>
+										Угловые диваны
+									</a>
+								</li>
+								<li class="main-nav-item">
+									<a href="#" class="main-subnav-link">
+										<span class="main-nav-icon">{% include '../icons/couch2.svg' %}</span>
+										Прямые диваны
+									</a>
+								</li>
+								<li class="main-nav-item">
+									<a href="#" class="main-subnav-link">
+										<span class="main-nav-icon">{% include '../icons/couch3.svg' %}</span>
+										Модульные диваны
+									</a>
+								</li>
+								<li class="main-nav-item">
+									<a href="#" class="main-subnav-link">
+										<span class="main-nav-icon">{% include '../icons/couch4.svg' %}</span>
+										Кресла
+									</a>
+								</li>
+								<li class="main-nav-item">
+									<a href="#" class="main-subnav-link">
+										<span class="main-nav-icon">{% include '../icons/couch5.svg' %}</span>
+										Пуфы Длинное Нзвание Пуфы Длинное Нзвание Пуфы Длинное Нзвание
+									</a>
+								</li>
+								<li class="main-nav-item">
+									<a href="#" class="main-subnav-link">
+										<span class="main-nav-icon">{% include '../icons/couch6.svg' %}</span>
+										Конструктор диванов
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</li>
+				{% endfor %}
+			</ul>
+		</nav>
+		<div class="nav-header">
+			<div class="nav-header-top">
+				<nav class="top-nav">
+					<ul class="top-nav-list">
+						{% for topNavItem in topNav %}
+						<li class="top-nav-item">
+							<a href="#" class="top-nav-link">
+								{{topNavItem}}
+							</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</nav>
+				<div class="nav-header-right">
+					<div class="header-city">
+						<a href="#" class="city-selector trigger-dropdown js-dropdown-trigger">Городской округ Черноголовка <span class="ld-icon">{{mixins.icon('dropdown_link')}}</span></a>
+						<ul class="dropdown filter-sorts-list js-dropdown">
+							<li class="filter-sorts-item">
+								<form action="">
+									<div class="form-row">
+										<select name="select-city" id="select-city" data-placeholder="Выберите ваш город">
+											<option value="Москва">Москва</option>
+											<option value="Волгоград">Волгоград</option>
+											<option value="Архангельск">Аргангельск</option>
+										</select>
+									</div>
+									<div class="form-row">
+										<div class="form-row align-center ">
+											<a href="?change-city=Москва" data-param="change-city" class="button"><span class="button-text">Да, это мой город</span><svg data-text="Да, это мой город" width="0" height="0"></svg></a>
+										</div>
+									</div>
+								</form>
+							</li>
+						</ul>
+					</div>
+					<div class="header-phone">
+						<span class="header-phone-number"><a href="tel:+78001001010">8&nbsp;(800)&nbsp;100&nbsp;10&nbsp;10</a></span>
+						<a href="#" class="header-phone-trigger trigger-dropdown js-dropdown-trigger">заказать звонок</a>
+						<ul class="dropdown filter-sorts-list js-dropdown">
+							<li class="filter-sorts-item">
+								<form action="./data/callback.json" class="js-form" data-success="this">
+									<div class="header-phone-form">
+										<div class="form-row">
+											<label for="phone" class="form-label">Номер телефона *</label>
+											<input class="form-input" type="tel" name="phone" id="phone" placeholder="+7(___) ___-__-__" required>
+											<div class="form-text">Поля отмеченные * обязатяельны для заполнения</div>
+										</div>
+										<div class="form-row form-row--checkbox">
+											<div class="form-checkbox">
+												<input type="checkbox" name="check" id="approve-check11" required>
+												<label for="approve-check11">я ознакомлен и согласен <a href="#" class="link-button">«C условиями сбора и обработки персональных данных».</a></label>
+											</div>
+										</div>
+										<div class="form-row align-center ">
+											<button type="submit" class="button"><span class="button-text">Отправить</span><svg data-text="Отправить" width="0" height="0"></svg></button>
+										</div>
+									</div>
+									<div class="header-phone-success js-form-success-text">
+									</div>
+								</form>
+								<button class="filters-close js-dropdown-close">{{mixins.icon('close')}}</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="nav-header-bottom">
+				<form action="search-result.html" class="search-form">
+					<input type="text" class="search-input" name="q" autocomplete="off">
+					<button type="submit" class="search-submit">{{mixins.icon('search')}}</button>
+					<div class="search-form__result"></div>
+				</form>
+				<div class="top-nav-actions">
+					<ul class="top-actions-list">
+						<li class="top-action-item">
+							<button class="top-action-button">
+								<span class="top-action-icon">{{mixins.icon('compare')}}</span>
+								<span class="top-action-counter">3</span>
+								<span class="top-action-text">в&nbsp;сравнении</span>
+							</button>
+						</li>
+						<li class="top-action-item">
+							<button class="top-action-button">
+								<span class="top-action-icon"><img src="img/eye.svg" alt="просмотренные"></span>
+								<span class="top-action-counter">99+</span>
+								<span class="top-action-text">просмотренные</span>
+							</button>
+						</li>
+						<li class="top-action-item">
+							<button class="top-action-button">
+								<span class="top-action-icon"><img src="img/heart.svg" alt="понравившиеся"></span>
+								<span class="top-action-counter">10</span>
+								<span class="top-action-text">понравившиеся</span>
+							</button>
+						</li>
+						<li class="top-action-item">
+							<button class="top-action-button">
+								<span class="top-action-icon"><img src="img/cart.svg"
+										alt="добавленные в корзину"></span>
+								<span class="top-action-counter">10</span>
+								<span class="top-action-text">в&nbsp;корзине</span>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hidden-768-up">
+		<nav class="hdd-nav">
+			<div class="flex-row">
+				<div class="flex-col">
+					<span class="hdd-nav-icon" js-on-main-nav-bar></span>
+				</div>
+				<div class="flex-col"><a href="page-search-results.html">{{mixins.icon('search')}}</a></div>
+				<div class="flex-col">
+					<a href="/" class="logo">
+						<img class="logo-img-big" src="img/logo.svg" alt="Логотип компании TheMebel">
+						<img class="logo-img-small" src="img/logo2.svg" alt="Логотип компании TheMebel">
+					</a>
+				</div>
+
+				<div class="flex-col">
+					<button class="top-action-button">
+						<span class="top-action-icon">{{mixins.icon('compare')}}</span>
+						<span class="top-action-counter">3</span>
+					</button>
+				</div>
+				<div class="flex-col">
+					<button class="top-action-button">
+						<span class="top-action-icon"><img src="img/heart.svg" alt="понравившиеся"></span>
+						<span class="top-action-counter">10</span>
+					</button>
+				</div>
+				<div class="flex-col">
+					<button class="top-action-button">
+						<span class="top-action-icon"><img src="img/cart.svg" alt="добавленные в корзину"></span>
+						<span class="top-action-counter">10</span>
+					</button>
+				</div>
+			</div>
+			<nav class="main-nav">
+				<div class="flex-row">
+					<div class="flex-col">
+						<span class="hdd-nav-icon-close" js-off-main-nav-bar></span>
+					</div>
+					<div class="flex-col"><a href="page-search-results.html">{{mixins.icon('search')}}</a></div>
+					<!-- <div class="flex-col city-selector"><a href="#">Москва<span class="icon-dropdown"></span></a></div> -->
+					<div class="header-city">
+						<a href="#" class="city-selector trigger-dropdown js-dropdown-trigger">Москва <span class="ld-icon">{{mixins.icon('dropdown_link')}}</span></a>
+						<ul class="dropdown filter-sorts-list js-dropdown">
+							<li class="filter-sorts-item">
+								<form action="">
+									<div class="form-row">
+										<select name="select-city" class="js-select-city" data-placeholder="Выберите ваш город">
+											<option value="Москва">Москва</option>
+											<option value="Волгоград">Волгоград</option>
+											<option value="Архангельск">Аргангельск</option>
+										</select>
+									</div>
+									<div class="form-row">
+										<div class="form-row align-center ">
+											<a href="?change-city=Москва" data-param="change-city" class="button"><span class="button-text">Да, это мой город</span><svg data-text="Да, это мой город" width="0" height="0"></svg></a>
+										</div>
+									</div>
+								</form>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="main-nav-list">
+					{% for navItem in mainNavMobile %}
+					<li class="main-nav-item">
+						<a href="#" class="main-nav-link active">
+							<span class="main-nav-icon">{% include navItem.icon %}</span>
+							{{navItem.name}}
+						</a>
+						<div class="main-subnav-container">
+							<div class="flex-row">
+								<span class="hdd-nav-icon-left" js-off-sub-nav-bar></span>
+								<div class="subnav-header">{{navItem.name}}</div>
+								<span class="hdd-nav-icon-close-white" js-off-main-nav-bar></span>
+							</div>
+							<nav class="main-subnav">
+								<ul class="main-subnav-list">
+									<li class="main-nav-item">
+										<a href="#" class="main-subnav-link">
+											<span class="main-nav-icon">{% include '../icons/couch1.svg' %}</span>
+											Угловые диваны
+										</a>
+									</li>
+									<li class="main-nav-item">
+										<a href="#" class="main-subnav-link">
+											<span class="main-nav-icon">{% include '../icons/couch2.svg' %}</span>
+											Прямые диваны
+										</a>
+									</li>
+									<li class="main-nav-item">
+										<a href="#" class="main-subnav-link">
+											<span class="main-nav-icon">{% include '../icons/couch3.svg' %}</span>
+											Модульные диваны
+										</a>
+									</li>
+									<li class="main-nav-item">
+										<a href="#" class="main-subnav-link">
+											<span class="main-nav-icon">{% include '../icons/couch4.svg' %}</span>
+											Кресла
+										</a>
+									</li>
+									<li class="main-nav-item">
+										<a href="#" class="main-subnav-link">
+											<span class="main-nav-icon">{% include '../icons/couch5.svg' %}</span>
+											Пуфы Длинное Нзвание Пуфы Длинное Нзвание Пуфы Длинное Нзвание
+										</a>
+									</li>
+									<li class="main-nav-item">
+										<a href="#" class="main-subnav-link">
+											<span class="main-nav-icon">{% include '../icons/couch6.svg' %}</span>
+											Конструктор диванов
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</li>
+					{% endfor %}
+					<li class="main-nav-item-without-icon"><a href="#">Каталог</a></li>
+					<li class="main-nav-item-without-icon"><a href="#">Доставка и возврат</a></li>
+					<li class="main-nav-item-without-icon"><a href="#">Пункт выдачи</a></li>
+					<li class="main-nav-item-without-icon"><a href="#">Сотрудничество</a></li>
+					<li class="main-nav-item-without-icon"><a href="#">Отзывы</a></li>
+					<li class="main-nav-item-without-icon">
+						<div class="header-phone">
+							<span class="header-phone-number"><a href="tel:+78001001010">8&nbsp;(800)&nbsp;100&nbsp;10&nbsp;10</a></span>
+							<a href="#" class="header-phone-trigger trigger-dropdown js-dropdown-trigger">заказать звонок</a>
+							<ul class="dropdown filter-sorts-list js-dropdown">
+								<li class="filter-sorts-item">
+									<form action="./data/callback.json" class="js-form" data-success="this">
+										<div class="header-phone-form">
+											<div class="form-row">
+												<label for="phone" class="form-label">Номер телефона *</label>
+												<input class="form-input" type="tel" name="phone" id="phone2" placeholder="+7(___) ___-__-__" required>
+												<div class="form-text">Поля отмеченные * обязатяельны для заполнения</div>
+											</div>
+											<div class="form-row form-row--checkbox">
+												<div class="form-checkbox">
+													<input type="checkbox" name="check" id="approve-check" required>
+													<label for="approve-check">я ознакомлен и согласен <a href="#" class="link-button">«C условиями сбора и обработки персональных данных».</a></label>
+												</div>
+											</div>
+											<div class="form-row align-center ">
+												<button type="submit" class="button"><span class="button-text">Отправить</span><svg data-text="Отправить" width="0" height="0"></svg></button>
+											</div>
+										</div>
+										<div class="header-phone-success js-form-success-text">
+										</div>
+									</form>
+									<button class="filters-close js-dropdown-close">{{mixins.icon('close')}}</button>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</nav>
+	</div>
+</header>

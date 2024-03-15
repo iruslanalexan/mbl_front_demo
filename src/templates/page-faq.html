@@ -1,0 +1,141 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+  <div class="wrapper">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a href="#" class="breadcrumbs-link">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Вопрос ответ</a>
+        </li>
+      </ul>
+    </div>
+    <h1 class="page-header">Вопрос ответ</h1>
+    <nav class="page-subnav">
+      <ul class="page-subnav-list">
+        <li class="page-subnav-list-item">
+          <a href="/page-about.html" class="page-subnav-link">О компании</a>
+        </li>
+        <li class="page-subnav-list-item">
+          <a href="/page-feedback.html" class="page-subnav-link">Отзывы</a>
+        </li>
+        <li class="page-subnav-list-item">
+          <a class="page-subnav-link">Вопрос-ответ</a>
+        </li>
+        <li class="page-subnav-list-item">
+          <a href="/page-contacts" class="page-subnav-link">Контакты</a>
+        </li>
+      </ul>
+	</nav>
+	<section class="page-section styled-content">
+		<h2>Категория товаров</h2>
+		<div class="reviews-select-container">
+			<select class="reviews-select">
+				<option selected="" value="Все">Все</option>
+				<option value="Диваны и кресла">Диваны и кресла</option>
+				<option value="Шкафы">Шкафы</option>
+				<option value="Мебель для гостиной">Мебель для гостиной</option>
+				<option value="Мебель для спальни">Мебель для спальни</option>
+				<option value="Мебель для прихожей">Мебель для прихожей</option>
+				<option value="Мебель для кухни">Мебель для кухни</option>
+				<option value="Мебель для детской">Мебель для детской</option>
+				<option value="Домашний кабинет">Домашний кабинет</option>
+			</select>
+		</div>
+	</section>
+	<section class="page-section">
+		<div class="accordion" data-accordion>
+			<section class="accordion__section collapsible-closed" data-collapsible>
+			  <h3>
+				<button class="accordion__trigger" data-collapsible-trigger>
+					Как выбрать товар?
+				  <span class="accordion__icon">{{mixins.icon('collapse')}}</span>
+				</button>
+			  </h3>
+			  <div class="accordion__body" data-collapsible-body>
+				<div class="accordion__content" data-collapsible-inner>
+					<p>Товары, представленные на нашем сайте, сгруппированы в соответствии с простой системой классификации. Для поиска нужного товара выберете одну из рубрик нашего каталога в меню слева, а затем выберите другие нужные параметры с помощью фильтров. Чтобы начать поиск заново, воспользуйтесь левым меню, это можно сделать на любой странице сайта.</p>
+					<p>Если вы не смогли найти искомый товар с помощью нашего каталога или предпочитаете сразу увидеть нужные товары, воспользуйтесь поиском, его окно расположено в верхней части сайта.</p>	
+					<p>После выбора подходящего товара, вы можете получить детальную информацию о нем, просмотреть увеличенные фотографии и видео, ознакомиться с отзывами покупателей и рекомендациями нашего магазина по товарам, которые можно заказать в комплект. Если товар имеет несколько вариантов оформления, размеров или конфигурации, выберете нужные параметры с помощью фильтров на странице товара и нажмите кнопку «Добавить в корзину».</p>
+				</div>
+			  </div>
+			</section>
+			<section class="accordion__section collapsible-closed" data-collapsible>
+			  <h3>
+				<button class="accordion__trigger" data-collapsible-trigger>
+					Можно ли заказать этот предмет мебели в другой ткани/другом цвете?
+				  <span class="accordion__icon">{{mixins.icon('collapse')}}</span>
+				</button>
+			  </h3>
+			  <div class="accordion__body" data-collapsible-body>
+				<div class="accordion__content" data-collapsible-inner>
+					<p>Товары, представленные на нашем сайте, сгруппированы в соответствии с простой системой классификации. Для поиска нужного товара выберете одну из рубрик нашего каталога в меню слева, а затем выберите другие нужные параметры с помощью фильтров. Чтобы начать поиск заново, воспользуйтесь левым меню, это можно сделать на любой странице сайта.</p>
+					<p>Если вы не смогли найти искомый товар с помощью нашего каталога или предпочитаете сразу увидеть нужные товары, воспользуйтесь поиском, его окно расположено в верхней части сайта.</p>	
+					<p>После выбора подходящего товара, вы можете получить детальную информацию о нем, просмотреть увеличенные фотографии и видео, ознакомиться с отзывами покупателей и рекомендациями нашего магазина по товарам, которые можно заказать в комплект. Если товар имеет несколько вариантов оформления, размеров или конфигурации, выберете нужные параметры с помощью фильтров на странице товара и нажмите кнопку «Добавить в корзину».</p>
+				</div>
+			  </div>
+			</section>
+			<section class="accordion__section collapsible-closed" data-collapsible>
+			  <h3>
+				<button class="accordion__trigger" data-collapsible-trigger>
+					Можно ли заказать мебель по индивидуальным размерам?
+				  <span class="accordion__icon">{{mixins.icon('collapse')}}</span>
+				</button>
+			  </h3>
+			  <div class="accordion__body" data-collapsible-body>
+				<div class="accordion__content" data-collapsible-inner>
+					<p>Товары, представленные на нашем сайте, сгруппированы в соответствии с простой системой классификации. Для поиска нужного товара выберете одну из рубрик нашего каталога в меню слева, а затем выберите другие нужные параметры с помощью фильтров. Чтобы начать поиск заново, воспользуйтесь левым меню, это можно сделать на любой странице сайта.</p>
+					<p>Если вы не смогли найти искомый товар с помощью нашего каталога или предпочитаете сразу увидеть нужные товары, воспользуйтесь поиском, его окно расположено в верхней части сайта.</p>	
+					<p>После выбора подходящего товара, вы можете получить детальную информацию о нем, просмотреть увеличенные фотографии и видео, ознакомиться с отзывами покупателей и рекомендациями нашего магазина по товарам, которые можно заказать в комплект. Если товар имеет несколько вариантов оформления, размеров или конфигурации, выберете нужные параметры с помощью фильтров на странице товара и нажмите кнопку «Добавить в корзину».</p>
+				</div>
+			  </div>
+			</section>
+			<section class="accordion__section collapsible-closed" data-collapsible>
+			  <h3>
+				<button class="accordion__trigger" data-collapsible-trigger>
+					Как узнать, есть ли товар на складе в моем городе?
+				  <span class="accordion__icon">{{mixins.icon('collapse')}}</span>
+				</button>
+			  </h3>
+			  <div class="accordion__body" data-collapsible-body>
+				<div class="accordion__content" data-collapsible-inner>
+					<p>Товары, представленные на нашем сайте, сгруппированы в соответствии с простой системой классификации. Для поиска нужного товара выберете одну из рубрик нашего каталога в меню слева, а затем выберите другие нужные параметры с помощью фильтров. Чтобы начать поиск заново, воспользуйтесь левым меню, это можно сделать на любой странице сайта.</p>
+					<p>Если вы не смогли найти искомый товар с помощью нашего каталога или предпочитаете сразу увидеть нужные товары, воспользуйтесь поиском, его окно расположено в верхней части сайта.</p>	
+					<p>После выбора подходящего товара, вы можете получить детальную информацию о нем, просмотреть увеличенные фотографии и видео, ознакомиться с отзывами покупателей и рекомендациями нашего магазина по товарам, которые можно заказать в комплект. Если товар имеет несколько вариантов оформления, размеров или конфигурации, выберете нужные параметры с помощью фильтров на странице товара и нажмите кнопку «Добавить в корзину».</p>
+				</div>
+			  </div>
+			</section>
+		  </div>
+		  <ul class="pagination-list">
+			<li class="pagination-item pagination-item--prev"><a href="#" class="pagination-action pagination-action--inactive">{{mixins.icon('arrow_big_left')}}</a></li>
+			<li class="pagination-item"><a href="#" class="pagination-link pagination-link--current">1</a></li>
+			<li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
+			<li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+			<li class="pagination-item">...</li>
+			<li class="pagination-item"><a href="#" class="pagination-link">13</a></li>
+			<li class="pagination-item"><a href="#" class="pagination-link">14</a></li>
+			<li class="pagination-item"><a href="#" class="pagination-link">15</a></li>
+			<li class="pagination-item pagination-item--next"><a href="#" class="pagination-action">{{mixins.icon('arrow_big_right')}}</a></li>
+		  </ul>
+	</section>
+    <section class="page-section promo-section promo-section--about full-width">
+      <picture class="full-width-picture">
+        <source srcset="img/about_top@2x.jpg 2x"/>
+        <img src="img/about_top.jpg"/>
+      </picture>
+      <div class="promo-description">
+        <p class="promo-section-header">themebel</p>
+        <p class="promo-section-text">Мы сможем вместе создать уют в&nbsp;вашей квартире</p>
+        <div class="promo-section-action"><a href="#" class="promo-section-link">Перейти в каталог</a></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+{% endblock %}

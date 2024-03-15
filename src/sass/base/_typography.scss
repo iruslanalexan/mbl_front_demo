@@ -1,0 +1,88 @@
+@font-face {
+	font-family: "Gilroy-Medium";
+	src: local('Pacifico Regular'), local('Pacifico-Regular'), url("../fonts/Gilroy-Medium.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy-Light";
+	src: local('Pacifico Regular'), local('Pacifico-Regular'), url("../fonts/Gilroy-Light.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy-ExtraBold";
+	src: local('Pacifico Regular'), local('Pacifico-Regular'), url("../fonts/Gilroy-ExtraBold.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+h1,
+.h1 {
+	font-weight: normal;
+	font-family: Gilroy-ExtraBold, Arial, sans-serif;
+	font-size: 22px;
+	line-height: 27px;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+}
+
+h2 {
+	font-weight: normal;
+	font-family: Gilroy-ExtraBold, Arial, sans-serif;
+	font-size: 22px;
+	line-height: 27px;
+	margin-bottom: 16px;
+	margin-top: 40px;
+	&:first-child {
+		margin-top: 0;
+	}
+
+	@media (min-width: $sm) {
+		margin-top: 80px;
+	}
+}
+
+h3 {
+	font-weight: normal;
+	font-family: Gilroy-ExtraBold, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 16px;
+	margin-top: 40px;
+
+	@media (min-width: $sm) {
+		margin-top: 80px;
+	}
+}
+
+h4 {
+	font-weight: normal;
+	font-family: Gilroy-Medium, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+	margin-bottom: 16px;
+	margin-top: 40px;
+
+	@media (min-width: $sm) {
+		margin-top: 80px;
+	}
+}
+
+p {
+	& + p {
+		margin-top: 10px;
+	}
+	> a {
+		border-bottom: 1px solid $cOrange;
+		transition: color 0.3s;
+		&:hover {
+			color: $cOrange;
+		}
+	}
+}

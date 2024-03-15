@@ -1,0 +1,259 @@
+<div id="popup-phone" class="popup-phone-container">
+    <form action="./data/callback.json" class="js-form">
+        <div class="form-row">
+            <label for="phone" class="form-label">Номер телефона *</label>
+            <input class="form-input js-phone" type="tel" name="phone" id="phone3"  placeholder="+7(___) ___-__-__" required>
+            <div class="form-text">Поля отмеченные * обязатяельны для заполнения</div>
+        </div>
+        <div class="form-row form-row--checkbox">
+            <div class="form-checkbox">
+              <input type="checkbox" name="approve-check3" id="approve-check3" required>
+              <label for="approve-check3">я ознакомлен и согласен <a href="#" class="link-button">«C условиями сбора и обработки персональных данных».</a></label>
+            </div>
+        </div>
+        <div class="form-row align-center ">
+            <button class="button" type="submit"><span class="button-text">Отправить</span><svg data-text="Отправить" width="0" height="0"></svg></button>
+        </div>
+    </form>
+</div>
+
+<div id="back-message" class="popup-back-container">
+    <form action="./data/order.json" class="js-form" data-success="this">
+        <h2>Обратная связь</h2>
+        <div class="popup-back-container-form">
+            <div class="form-row">
+                <label for="first-name" class="form-label">ФИО *</label>
+                <input class="form-input" type="text" name="first-name"  placeholder="Иванов Иван Иванович" required>
+            </div>
+            <div class="form-row">
+                <label for="email-client" class="form-label">E-mail *</label>
+                <input class="form-input" type="email" name="email-client" placeholder="E-mail" required>
+            </div>
+            <div class="form-row">
+                <label for="first-name" class="form-label">Номер телефона*</label>
+                <input class="form-input js-phone" type="tel" name="phone" placeholder="+7(___)-___-__-__" required>
+            </div>
+            <div class="form-row">
+                <label for="email-client" class="form-label">Текст *</label>
+                <textarea class="form-input" name="text" placeholder="Введите текст" required></textarea>
+                <div class="form-text">Поля отмеченные * обязатяельны для заполнения</div>
+            </div>
+            <div class="form-row form-row--checkbox">
+                <div class="form-checkbox">
+                <input type="checkbox" name="approve-check2" id="approve-check2" required>
+                <label for="approve-check2">я ознакомлен и согласен <a href="#" class="link-button">«C условиями сбора и обработки персональных данных».</a></label>
+                </div>
+            </div>
+            <div class="form-row align-center">
+                <button class="button" type="submit"><span class="button-text">Отправить</span><svg data-text="Отправить" width="0" height="0"></svg></button>
+            </div>
+        </div>
+        <div class="popup-back-container-success js-form-success-text"></div>
+    </form>
+</div>
+
+<div id="order-goods" class="popup-back-container">
+    <form action="./data/order.json" class="js-form" data-success="this">
+        <h2>Заказ товара</h2>
+        <div class="popup-back-container-form">
+            <div class="form-row">
+                <label for="first-name" class="form-label">Имя*</label>
+                <input class="form-input" type="text" name="first-name"  placeholder="Имя" required>
+            </div>
+            <div class="form-row">
+                <label for="first-name" class="form-label">Номер телефона*</label>
+                <input class="form-input js-phone" type="tel" name="phone" placeholder="+7(___)-___-__-__" required>
+            </div>
+            <div class="form-row">
+                <label for="email-client" class="form-label">E-mail *</label>
+                <input class="form-input" type="email" name="email-client" placeholder="E-mail" required>
+            </div>
+            <div class="form-row">
+                <label class="form-label">Общая стоимость без учета доставки</label>
+                <div class="item-price">24 990 р.</div>
+            </div>
+            <div class="form-row">
+                <label for="email-client" class="form-label">Комментарий</label>
+                <textarea class="form-input" name="text" placeholder="Введите текст"></textarea>
+                <div class="form-text">Поля отмеченные * обязатяельны для заполнения</div>
+            </div>
+            <div class="form-row form-row--checkbox">
+                <div class="form-checkbox">
+                <input type="checkbox" name="approve-check6" id="approve-check6" required>
+                <label for="approve-check6">я ознакомлен и согласен <a href="#" class="link-button">«C условиями сбора и обработки персональных данных».</a></label>
+                </div>
+            </div>
+            <div class="form-row align-center">
+                <button class="button" type="submit"><span class="button-text">Отправить</span><svg data-text="Отправить" width="0" height="0"></svg></button>
+            </div>
+        </div>
+        <div class="popup-back-container-success js-form-success-text"></div>
+    </form>
+</div>
+
+<div id="add-review" class="popup-back-container">
+    <form action="./data/review.json" class="js-form" data-success="this">
+        <h2>Оставить отзыв</h2>
+        <div class="popup-back-container-form">
+            <div class="form-row">
+                <label for="first-name" class="form-label">Оцените товар</label>
+                <div class="ps-stars js-stars" data-rating="0"></div>
+            </div>
+            <div class="form-row">
+                <label for="first-name" class="form-label">Категория</label>
+                <select name="select-city" class="js-select-city" data-placeholder="Выберите ваш город">
+                    <option selected="" value="Все">Все</option>
+                    <option value="Диваны и кресла">Диваны и кресла</option>
+                    <option value="Шкафы">Шкафы</option>
+                    <option value="Мебель для гостиной">Мебель для гостиной</option>
+                    <option value="Мебель для спальни">Мебель для спальни</option>
+                    <option value="Мебель для прихожей">Мебель для прихожей</option>
+                    <option value="Мебель для кухни">Мебель для кухни</option>
+                    <option value="Мебель для детской">Мебель для детской</option>
+                    <option value="Домашний кабинет">Домашний кабинет</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="email-client" class="form-label">Плюсы:*</label>
+                <textarea class="form-input" name="text" placeholder="Введите текст" required></textarea>
+            </div>
+            <div class="form-row">
+                <label for="email-client" class="form-label">Минусы:*</label>
+                <textarea class="form-input" name="text2" placeholder="Введите текст" required></textarea>
+            </div>
+            <div class="form-row">
+                <label for="email-client" class="form-label">Текст отзыва:*</label>
+                <textarea class="form-input" name="text3" placeholder="Введите текст" required></textarea>
+            </div>
+            <div class="form-row">
+                <label for="first-name" class="form-label">Фото товара</label>
+                <label class="form-file">
+                    <div class="form-file-box">
+                        <span class="button form-file-button" type="submit"><span class="button-text">Выбрать файлы</span><svg data-text="Отправить" width="0" height="0"></svg></span>
+                        <div class="form-file-text" data-on="Выбрано файлов: " data-off="Файлы не выбраны">Файлы не выбраны</div>
+                    </div>
+                    <input class="form-input" name="files[]" type="file" multiple accept="image/tiff,image/jpeg,image/bmp,image/jpe,image/jpg,image/png,image/gif">
+                </label>
+                <div class="form-text">Максимальное количество файлов не должно превышать 5 шт, общий объем файлов не может превышать 5 Mb</div>
+            </div>
+            <div class="form-row">
+                <label for="first-name" class="form-label">Имя*</label>
+                <input class="form-input" type="text" name="first-name"  placeholder="Имя" required>
+            </div>
+            <div class="form-row">
+                <label for="email-client" class="form-label">E-mail *</label>
+                <input class="form-input" type="email" name="email-client" placeholder="E-mail" required>
+            </div>
+            <div class="form-row">
+                <div class="form-text">Поля отмеченные * обязатяельны для заполнения</div>
+            </div>
+            <div class="form-row form-row--checkbox">
+                <div class="form-checkbox">
+                <input type="checkbox" name="approve-check5" id="approve-check5" required>
+                <label for="approve-check5">я ознакомлен и согласен <a href="#" class="link-button">«C условиями сбора и обработки персональных данных».</a></label>
+                </div>
+            </div>
+            <div class="form-row align-center">
+                <button class="button" type="submit"><span class="button-text">Отправить</span><svg data-text="Отправить" width="0" height="0"></svg></button>
+            </div>
+        </div>
+        <div class="popup-back-container-success js-form-success-text"></div>
+    </form>
+</div>
+
+<div id="add-to-basket" class="popup-basket-container">
+    <h2>Товар добавлен в корзину</h2>
+    <div class="basket-items">
+        <div class="b-items-container">
+            <div class="b-item">
+                <img src="./img/b-img1.jpg"/>
+                <div class="bi-content">
+                    <h3 class="bic-header">Диван Марсель прямой</h3>
+                    <div class="bic-details">
+                        <div class="bicd-col">
+                            <span>Наличие</span>
+                            <span>Размеры</span>
+                            <span>Спальное место</span>
+                        </div>
+                        <div class="bicd-col">
+                            <span>в Хабаровске</span>
+                            <span>1200 × 2190 × 420 мм</span>
+                            <span>1100 × 2090 × 320 мм</span>
+                        </div>
+                        <div class="bicd-col">
+                            <div class="bicd-counter">
+                                <span class="bidc-minus">-</span>
+                                <span class="bidc-number">2</span>
+                                <span class="bidc-plus">+</span>
+                            </div>
+                            <div class="bicd-price">
+                                <h1 class="bicdp-summ">49 980 р.</h1>
+                                <p class="bicdp-comments">
+                                    Стоимость за шт. 24 990 р.<br>
+                                    Сборка от 390 р.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <input type="checkbox" id="checkbox1">
+                        <label for="checkbox1">Необходима сборка</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-section basket-details checkout-background-section">
+        <div class="bd-col">
+            <span>Итого 2 товара на сумму: <b>124 940 руб.</b></span>
+            <span class="bid-bonuses">Бонусная программа 89 баллов на счёт</span>
+            <a href="#" data-fancybox-close class="link-button">Вернуться к покупкам</a>
+        </div>
+        <div class="bd-col">
+            <a href="page-checkout.html" class="button"><span class="button-text">Оформить заказ</span><svg data-text="Оформить заказ" width="0" height="0"></svg></a>
+        </div>
+    </div>
+    <h2 class="section-header">С этим товаром покупают</h2>
+    {% include "partials/_cards_3col.html" %}
+</div>
+
+<div id="popup-pickup" class="popup-pickup">
+    <h2>Пункты выдачи в Хабаровске</h2>
+    <div class="popup-pickup-map"></div>
+    <div class="popup-pickup-map-item"
+        data-name='Салон "Themebel"'
+        data-lat="48.475379"
+        data-lng="135.080721"
+        data-address="ул. Гамарника, 72а, Хабаровск, Хабаровский край <br>8 (800) 100-10-00"
+        data-schedule='[
+            ["Пн-Чт", "10:00 - 19:00"],
+            ["Пт", "10:00 - 18:00"],
+            ["Сб-Вс", "Выходной"]
+        ]'
+        data-pin="img/pin.svg"
+        ></div>
+    <div class="popup-pickup-map-item"
+        data-name='Мебельный центр "Ваша мебель"'
+        data-lat="48.47145"
+        data-lng="135.085437"
+        data-address="ул. Гамарника, 72а, Хабаровск, Хабаровский край<br>8 (800) 100-10-00"
+        data-schedule='[
+            ["Пн-Чт", "10:00 - 19:00"],
+            ["Пт", "10:00 - 18:00"],
+            ["Сб-Вс", "Выходной"]
+        ]'
+        data-pin="img/pin.svg"
+        ></div>
+    <div class="popup-pickup-map-item"
+        data-name='ТЦ "Дом мебели" 1 и 2 этаж'
+        data-lat="48.483904"
+        data-lng="135.062740"
+        data-address="ул. Гамарника, 72а, Хабаровск, Хабаровский край<br>8 (800) 100-10-00"
+        data-schedule='[
+            ["Пн-Чт", "10:00 - 19:00"],
+            ["Пт", "10:00 - 18:00"],
+            ["Сб-Вс", "Выходной"]
+        ]'
+        data-pin="img/pin.svg"
+        ></div>
+</div>

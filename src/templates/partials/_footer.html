@@ -1,0 +1,152 @@
+<footer class="site-footer">
+	<div class="wrapper flex-block-same">
+		<div class="flex-col footer-first-col">
+			<div class="fa"><a href="#">Статьи</a></div>
+			<div class="footer-subscribe">
+				<form action="./data/subscribe.json" class="footer-subscribe-form js-form">
+					<label for="subscribe">Подпишитесь на акциии <br class="hidden-desktop">полезные материалы</label>
+					<div class="fs-row">
+						<input type="email" name="subscribe" id="subscribe" class="fs-input" required>
+						<button type="submit" class="fs-button">{{mixins.icon('search_arrow')}}</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="flex-col">
+			<ul class="footer-nav-list">
+				<li class="footer-nav-item">
+					<a href="#" class="footer-nav-link">О компании</a>
+				</li>
+				<li class="footer-nav-item">
+					<a href="#" class="footer-nav-link">Отзывы</a>
+				</li>
+				<li class="footer-nav-item">
+					<a href="#" class="footer-nav-link">Вопрос / Ответ</a>
+				</li>
+				<li class="footer-nav-item">
+					<a href="#" class="footer-nav-link">Доствка и оплата</a>
+				</li>
+				<li class="footer-nav-item">
+					<a href="#" class="footer-nav-link">Гарантии</a>
+				</li>
+				<li class="footer-nav-item">
+					<a href="#" class="footer-nav-link">Покупателям</a>
+				</li>
+			</ul>
+		</div>
+		<div class="flex-col">
+			<ul class="footer-nav-list">
+				<li class="footer-nav-item">
+					<a href="#" class="footer-nav-link">Сотрудничество</a>
+				</li>
+				<li class="footer-nav-item">
+					<a href="#" class="footer-nav-link">Поставщикам</a>
+				</li>
+				<li class="footer-nav-item">
+					<a href="#" class="footer-nav-link">Оптовикам</a>
+				</li>
+				<li class="footer-nav-item">
+					<a href="#" class="footer-nav-link">Дизайнерам</a>
+				</li>
+				<li class="footer-nav-item">
+					<a href="#" class="footer-nav-link">Карьера</a>
+				</li>
+			</ul>
+		</div>
+		<div class="flex-col">
+			<div class="header-phone">
+				<span class="header-phone-number"><a href="tel:+78001001010">8&nbsp;(800)&nbsp;100&nbsp;10&nbsp;10</a></span>
+				<a data-fancybox data-src="#popup-phone" href="javascript:;" class="header-phone-trigger">заказать
+					звонок</a>
+			</div>
+			<div class="footer-hello">
+				<a href="mailto:hello@themebel.com">hello@themebel.com</a>
+			</div>
+			<div class="footer-work">
+				<p>Режим работы</p>
+				<p>Ежедневно <br> 9:00—22:00</p>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper flex-block-same">
+		<div class="flex-col">
+			<div class="footer-payments">
+				<p>Принимаем к оплате</p>
+				<ul class="payments-list">
+					<li class="payments-item">
+						<span class="payments-icon payments-icon--type1">{{mixins.icon('visa')}}</span>
+					</li>
+					<li class="payments-item">
+						<span class="payments-icon payments-icon--type1">{{mixins.icon('mir')}}</span>
+					</li>
+					<li class="payments-item">
+						<span class="payments-icon payments-icon--type2">{{mixins.icon('mastercard')}}</span>
+					</li>
+					<li class="payments-item">
+						<span class="payments-icon payments-icon--type2">{{mixins.icon('maestro')}}</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="flex-col">
+			<div class="footer-socials">
+				<p>Мы в соцсетях</p>
+				<ul class="footer-socials-list">
+					<li class="footer-socials-item">
+						<a href="#" class="footer-socials-link">{{mixins.icon('vk')}}</a>
+					</li>
+					<li class="footer-socials-item">
+						<a href="#" class="footer-socials-link">{{mixins.icon('fb')}}</a>
+					</li>
+					<li class="footer-socials-item">
+						<a href="#" class="footer-socials-link">{{mixins.icon('ok')}}</a>
+					</li>
+					<li class="footer-socials-item">
+						<a href="#" class="footer-socials-link">{{mixins.icon('instagram')}}</a>
+					</li>
+					<li class="footer-socials-item">
+						<a href="#" class="footer-socials-link">{{mixins.icon('youtube')}}</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<button class="go-up" type="button">{{mixins.icon('arrow_big_left')}}</button>
+
+<form action="./data/subscribe.json" class="subscribe js-form" data-success="this">
+	<button class="subscribe__close"></button>
+	<div class="subscribe__form">
+		<h2 class="subscribe__title">Получите 1000 рублей на&nbsp;первую покупку!</h2>
+		<div class="subscribe__text">Подпишитесь на рассылку спецпредложений и мы Вам расскажем как получить скидку в первом же письме!</div>
+		<div class="form-row">
+			<input class="form-input" type="email" name="email" placeholder="E-mail" required>
+			<div class="form-checkbox  form-row--checkbox">
+			  <input type="checkbox" name="approve-check4" id="approve-check4">
+			  <label for="approve-check4">я ознакомлен и согласен <a href="#" class="link-button">«C условиями сбора и обработки персональных данных».</a></label>
+			</div>
+		</div>
+		<div class="subscribe__footer">
+			<div class="subscribe__submit">
+				<button class="button" type="submit"><span class="button-text">Подписаться</span><svg data-text="Подписаться" width="0" height="0"></svg></button>
+			</div>
+			<button class="subscribe__later" type="button">Напомнить позже</button>
+		</div>
+	</div>
+	<div class="subscribe__success">
+		<div class="subscribe__success__text js-form-success-text"></div>
+	</div>
+</form>
+
+<div class="cookies" data-app="cookie">
+	<div class="cookies__container">
+		<div class="cookies__text">
+			На сайте используются cookie-файлы, которые помогают показывать Вам самую актуальную информацию. Продолжая пользоваться сайтом, Вы даете согласие на использование ваших Метаданных и cookie-файлов.
+			<a href="#">Побробнее о правилах использования cookie</a>
+		</div>
+		<div class="cookies__btn">
+			<button class="button" type="button"><span class="button-text">Согласен</span><svg data-text="Согласен" width="0" height="0"></svg></button>
+		</div>
+	</div>
+</div>

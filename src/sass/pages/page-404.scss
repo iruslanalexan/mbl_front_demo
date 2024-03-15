@@ -1,0 +1,30 @@
+.p404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .p404-background {
+        width: 678px;
+        height: 480px;
+        background: url('../img/404.svg') 50% 50% no-repeat;
+
+        @media (max-width: 767px) {
+            padding-bottom: 70%;
+            width: 100%;
+            height: auto;
+            background-size: contain;
+        }
+    }
+
+    & p {
+        max-width: 498px;
+        text-align: center;
+        margin-top: 65px;
+        color: #474216;
+    }
+
+    & a.button {
+        margin-top: 85px;
+    }
+}

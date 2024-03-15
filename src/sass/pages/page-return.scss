@@ -1,0 +1,32 @@
+.danger-info {
+    align-items: flex-start;
+    padding: 15px;
+
+    img {
+        margin-right: 15px;
+
+        @media (max-width: $sm - 1) {
+            margin-top: 3px;
+            margin-right: 12px;
+            width: 24px;
+        }
+    }
+
+    h3 {
+        font-weight: 400;
+        font-family: Gilroy-ExtraBold,Arial,sans-serif;
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    > div {
+        align-self: center;
+    }
+
+    @media (min-width: $sm) {
+        padding: 25px;
+    }
+}
+.small-marin {
+    margin-top: 35px;
+}

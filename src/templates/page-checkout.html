@@ -1,0 +1,412 @@
+{% set menuCollapsed=true %}
+
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<main class="site-inner">
+	<div class="wrapper page-checkout">
+		{% set links = [
+            { title: 'Главная', href: '/' },
+            { title: 'Корзина', href: '' }
+        ] %}
+		{% include './partials/_breadcrumbs.html' %}
+		<h1 class="page-header page-header-checkout">Корзина</h1>
+		<form action="page-checkout-finish.html" class="page-checkout-form">
+			<section class="page-section basket-items page-checkout-step is-active">
+				<h2 class="checkout-subheader"><span><b>1</b>/5</span>Товары в заказе</h2>
+				<div class="b-items-container">
+					<div class="b-item">
+						<a href="#"><img src="./img/b-img1.jpg" /></a>
+						<div class="bi-content">
+							<h3 class="bic-header"><a href="#">Диван Марсель прямой</a></h3>
+							<div class="bic-details">
+								<div class="bicd-col">
+									<span>Наличие</span>
+									<span>Размеры</span>
+									<span>Спальное место</span>
+								</div>
+								<div class="bicd-col">
+									<span>в Хабаровске</span>
+									<span>1200 × 2190 × 420 мм</span>
+									<span>1100 × 2090 × 320 мм</span>
+								</div>
+								<div class="bicd-col">
+									<div class="bicd-counter">
+										<span class="bidc-minus">-</span>
+										<span class="bidc-number">2</span>
+										<span class="bidc-plus">+</span>
+									</div>
+									<div class="bicd-price">
+										<h1 class="bicdp-summ">49 980 р.</h1>
+										<p class="bicdp-comments">
+											Стоимость за шт. 24 990 р.<br>
+											Сборка от 390 р.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<input type="checkbox" id="checkbox1">
+								<label for="checkbox1">Необходима сборка</label>
+							</div>
+						</div>
+						<span class="bi-close"></span>
+					</div>
+					<div class="b-item">
+						<a href="#"><img src="./img/b-img1.jpg" /></a>
+						<div class="bi-content">
+							<h3 class="bic-header"><a href="#">Диван Марсель прямой</a></h3>
+							<div class="bic-details">
+								<div class="bicd-col">
+									<span>Наличие</span>
+									<span>Размеры</span>
+									<span>Спальное место</span>
+								</div>
+								<div class="bicd-col">
+									<span>в Хабаровске</span>
+									<span>1200 × 2190 × 420 мм</span>
+									<span>1100 × 2090 × 320 мм</span>
+								</div>
+								<div class="bicd-col">
+									<div class="bicd-counter">
+										<span class="bidc-minus">-</span>
+										<span class="bidc-number">2</span>
+										<span class="bidc-plus">+</span>
+									</div>
+									<div class="bicd-price">
+										<h1 class="bicdp-summ">49 980 р.</h1>
+										<p class="bicdp-comments">
+											Стоимость за шт. 24 990 р.<br>
+											Сборка от 390 р.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<input type="checkbox" id="checkbox2">
+								<label for="checkbox2">Необходима сборка</label>
+							</div>
+						</div>
+						<span class="bi-close"></span>
+					</div>
+					<div class="b-item">
+						<a href="#"><img src="./img/b-img1.jpg" /></a>
+						<div class="bi-content">
+							<h3 class="bic-header"><a href="#">Диван Марсель прямой</a></h3>
+							<div class="bic-details">
+								<div class="bicd-col">
+									<span>Наличие</span>
+									<span>Размеры</span>
+									<span>Спальное место</span>
+								</div>
+								<div class="bicd-col">
+									<span>в Хабаровске</span>
+									<span>1200 × 2190 × 420 мм</span>
+									<span>1100 × 2090 × 320 мм</span>
+								</div>
+								<div class="bicd-col">
+									<div class="bicd-counter">
+										<span class="bidc-minus">-</span>
+										<span class="bidc-number">2</span>
+										<span class="bidc-plus">+</span>
+									</div>
+									<div class="bicd-price">
+										<h1 class="bicdp-summ">49 980 р.</h1>
+										<p class="bicdp-comments">
+											Стоимость за шт. 24 990 р.<br>
+											Сборка от 390 р.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<input type="checkbox" id="checkbox3">
+								<label for="checkbox3">Необходима сборка</label>
+							</div>
+						</div>
+						<span class="bi-close"></span>
+					</div>
+				</div>
+				<div class="basket-details checkout-background-section">
+					<div class="bd-col">
+						<span>3 товара на сумму: <b>124 940 руб.</b></span>
+						<p>Стоимость услуг сборки и установки<br>рассчитываются индивидуально менеджером</p>
+						<a href="#" class="link-button">Вернуться к покупкам</a>
+					</div>
+					<div class="bd-col">
+						<span>Итого к оплате</span>
+						<h2 class="h1">124 940 р.</h2>
+						<span class="bid-bonuses">Бонусная программа 89 баллов на счёт</span>
+					</div>
+				</div>
+				<div class="centered-text page-checkout-step-next">
+					<a href="#" class="button page-checkout-step-next-button"><span class="button-text">Выбрать способ доставки</span><svg data-text="Выбрать способ доставки" width="0" height="0"></svg></a>
+				</div>
+			</section>
+			<section class="page-section checkout-delivery page-checkout-step">
+				<h2 class="checkout-subheader"><span><b>2</b>/5</span>Доставка по Москве</h2>
+				<div class="cd-select-city"><a href="#" class="link-button js-change-city">Выбрать другой город</a></div>
+				<div class="cd-table">
+					<div class="cdt-row cdt-header">
+						<div><span>Способ доставки</span></div>
+						<div><span>Тип доставки</span></div>
+						<div><span>Стоимость</span></div>
+					</div>
+					<div class="cdt-row">
+						<div class="form-row">
+							<div class="form-checkbox">
+								<input type="radio" id="radio1" name="radio" data-type="courier">
+								<label for="radio1">Доставка курьером по Москве</label>
+							</div>
+						</div>
+						<div><span>Домой/в офис</span></div>
+						<div><span class="cdtr-bold">Бесплатно</span></div>
+					</div>
+					<div class="cdt-row">
+						<div class="form-row">
+							<div class="form-checkbox">
+								<input type="radio" id="radio2" name="radio" data-type="courier">
+								<label for="radio2">Доставка собсвенной курьерской службой</label>
+							</div>
+						</div>
+						<div><span>Домой/в офис</span></div>
+						<div><span class="cdtr-bold">от 300 р.</span></div>
+					</div>
+					<div class="cdt-row">
+						<div class="form-row">
+							<div class="form-checkbox">
+								<input type="radio" id="radio3" name="radio" data-type="pickup">
+								<label for="radio3">Самовывоз из магазина на Мичуринском проспекте</label>
+							</div>
+						</div>
+						<div><span>Самовывоз</span></div>
+						<div><span class="cdtr-bold">Бесплатно</span></div>
+					</div>
+				</div>
+				<div class="checkout-background-section">
+					<div class="checkout-price-with-delivery js-delivery-placeholder">
+						<span>Пожалуйста, выберите способ доставки</span>
+					</div>
+					<div class="checkout-price-with-delivery js-delivery-checked" style="display:none">
+						<span>Стоимость покупки с учетом доставки</span>
+						<span>124 940 р.</span>
+					</div>
+				</div>
+			</section>
+			<section class="page-section page-checkout-step">
+				<h2 class="checkout-subheader"><span><b>3</b>/5</span>Оформление заказа</h2>
+				<div class="checkout-order">
+					<div class="co-col">
+						<div class="coc-container">
+							<div class="form-row">
+								<label class="form-label" for="phone">Телефон*</label>
+								<input class="form-input js-phone" name="phone" type="tel" id="phone4" placeholder="+7(___)-___-__-__" required>
+							</div>
+							<div class="form-row">
+								<label class="form-label" for="fullname">ФИО (полностью)*</label>
+								<input class="form-input" name="fullname" type="text" id="fullname" placeholder="Иван Иванов" required>
+							</div>
+							<div class="form-row">
+								<label class="form-label" for="email">E-mail</label>
+								<input class="form-input" name="email" type="email" id="email" placeholder="mail.ya@ru">
+							</div>
+						</div>
+					</div>
+					<div class="co-col">
+						<div class="coc-container">
+							<p>Для продолжения оформления<br>заказа введите свой номер<br>телефона</p>
+						</div>
+					</div>
+				</div>
+				<div class="centered-text page-checkout-step-next">
+					<a href="#" class="button page-checkout-step-next-button"><span class="button-text">Продолжить оформление</span><svg data-text="Продолжить оформление" width="0" height="0"></svg></a>
+				</div>
+			</section>
+			<section class="page-section page-checkout-step">
+				<h2 class="checkout-subheader"><span><b>4</b>/5</span>Адрес доставки</h2>
+				<div class="checkout-delivery-address">
+					<div class="cda-row">
+						<h4>Адрес доставки</h4>
+					</div>
+					<div class="cda-row">
+						<div class="cdar-input">
+							<label class="form-label" for="metro">Метро</label>
+							<select class="js-select-city" data-placeholder="Выбрать">
+								<option></option>
+								<option value="1">Метро 1</option>
+								<option value="2">Метро 2</option>
+								<option value="3">Метро 3</option>
+								<option value="4">Метро 4</option>
+								<option value="5">Метро 5</option>
+							</select>
+						</div>
+						<div class="cdar-input">
+							<label class="form-label" for="street">Улица*</label>
+							<input class="form-input" name="street" id="street" placeholder="Мира" required>
+						</div>
+						<div class="cdar-input">
+							<label class="form-label" for="house">Дом*</label>
+							<input class="form-input" name="house" id="house" placeholder="13" required>
+						</div>
+						<div class="cdar-input">
+							<label class="form-label" for="flat">Квартира/Офис*</label>
+							<input class="form-input" name="flat" id="flat" placeholder="90" required>
+						</div>
+					</div>
+				</div>
+				<div class="checkout-delivery-pickup">
+					<div class="cdp-title">
+						Самовывоз из магазина на Мичуринском проспекте
+					</div>
+					<label class="cdp-item" data-lat="48.483904" data-lng="135.062740">
+						<input type="radio" name="delivery-address" value="1" required>
+						<div class="cdp-item-wrap">
+							<div class="cdp-item-left">
+								<ul class="cdp-item-list">
+									<li><span class="cdp-item-title">ул. Гамарника, 72а, Хабаровск, Хабаровский край</span></li>
+									<li><b>8 (800) 100-10-00</b></li>
+								</ul>
+							</div>
+							<div class="cdp-item-right">
+								<ul class="cdp-item-schedule">
+									<li>
+										<span>Понедельник – четверг</span>
+										<span>10:00 – 19:00</span>
+									</li>
+									<li>
+										<span>Пятница</span>
+										<span>10:00 – 18:00</span>
+									</li>
+									<li>
+										<span>Суббота – воскресение</span>
+										<span>Выходной</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</label>
+					<label class="cdp-item" data-lat="48.47145" data-lng="135.085437">
+						<input type="radio" name="delivery-address" value="2" required>
+						<div class="cdp-item-wrap">
+							<div class="cdp-item-left">
+								<ul class="cdp-item-list">
+									<li><span class="cdp-item-title">ул. Гамарника, 72а, Хабаровск, Хабаровский край</span></li>
+									<li><b>8 (800) 100-10-00</b></li>
+								</ul>
+							</div>
+							<div class="cdp-item-right">
+								<ul class="cdp-item-schedule">
+									<li>
+										<span>Понедельник – четверг</span>
+										<span>10:00 – 19:00</span>
+									</li>
+									<li>
+										<span>Пятница</span>
+										<span>10:00 – 18:00</span>
+									</li>
+									<li>
+										<span>Суббота – воскресение</span>
+										<span>Выходной</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</label>
+					<label class="cdp-item" data-lat="48.475379" data-lng="135.080721">
+						<input type="radio" name="delivery-address" value="3" required>
+						<div class="cdp-item-wrap">
+							<div class="cdp-item-left">
+								<ul class="cdp-item-list">
+									<li><span class="cdp-item-title">ул. Гамарника, 72а, Хабаровск, Хабаровский край</span></li>
+									<li><b>8 (800) 100-10-00</b></li>
+								</ul>
+							</div>
+							<div class="cdp-item-right">
+								<ul class="cdp-item-schedule">
+									<li>
+										<span>Понедельник – четверг</span>
+										<span>10:00 – 19:00</span>
+									</li>
+									<li>
+										<span>Пятница</span>
+										<span>10:00 – 18:00</span>
+									</li>
+									<li>
+										<span>Суббота – воскресение</span>
+										<span>Выходной</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</label>
+					
+					<div class="cdp-map" data-lat="48.483904" data-lng="135.062740" data-zoom="15" data-icon="img/pin.svg">
+					</div>
+				</div>
+				<div class="centered-text page-checkout-step-next">
+					<a href="#" class="button page-checkout-step-next-button"><span class="button-text">Выбрать способ оплаты</span><svg data-text="Выбрать способ оплаты" width="0" height="0"></svg></a>
+				</div>
+			</section>
+			<section class="page-section page-checkout-step">
+				<h2 class="checkout-subheader"><span><b>5</b>/5</span>Способ оплаты заказа</h2>
+				<div class="checkout-payment-method">
+					<div class="cpm-methods">
+						<label class="cpmm-item">
+							<input type="radio" name="pay-type" value="1" required>
+							<div class="cpmm-item-wrap">
+								<h2 class="h1">Оплата банковской картой</h2>
+								<img src="./img/payment-method1.svg">
+							</div>
+						</label>
+						<label class="cpmm-item">
+							<input type="radio" name="pay-type" value="2" required>
+							<div class="cpmm-item-wrap">
+								<h2 class="h1">При получении</h2>
+								<img src="./img/payment-method2.svg">
+							</div>
+						</label>
+						<label class="cpmm-item">
+							<input type="radio" name="pay-type" value="3" required>
+							<div class="cpmm-item-wrap">
+								<h2 class="h1">Банковским переводом</h2>
+								<img src="./img/payment-method3.svg">
+							</div>
+						</label>
+					</div>
+				</div>
+				<div class="checkout-payment-points">
+					<span class="cp-points">700</span>
+					<span class="cp-description">баллов на счёте</span>
+					<div class="form-checkbox">
+						<input class="form-input" type="checkbox" id="use">
+						<label class="form-label" for="use">Списать</label>
+
+					</div>
+					<div class="form-checkbox form-inline">
+						<input class="form-input" id="points">
+						<label class="form-label" for="points"> баллов</label>
+					</div>
+				</div>
+				<div class="checkout-payment-comment">
+					<a class="link-button" href="#">У меня есть комментарии к заказу</a><img src="./img/down-arrow.svg">
+				</div>
+				<div class="form-row margin-top checkout-text-comment">
+					<textarea name="text1" id="inp4" class="form-input textarea-mini"></textarea>
+				</div>
+				<div class="checkout-personal-data">
+					<div class="form-checkbox">
+						<input class="form-input" type="checkbox" name="agreee" id="personal-data" required>
+						<label class="form-label" for="personal-data">я ознакомлен и согласен «<a href="#"
+								class="link-button">С условиями сбора и обработки персональных данных</a>».</label>
+					</div>
+				</div>
+				<div class="centered-text checkput-submit">
+					<button class="button" type="submit"><span class="button-text">Оформить заказ</span><svg data-text="Оформить заказ" width="0" height="0"></svg></button>
+				</div>
+			</section>
+		</form>
+	</div>
+</main>
+
+{% endblock %}

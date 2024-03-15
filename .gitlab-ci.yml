@@ -1,0 +1,41 @@
+image: node
+
+stages:
+  - build-project
+  - deploy
+
+build-project:
+  stage: build-project
+  before_script:
+    - npm install -g gulp
+    - npm install
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - node_modules/
+  tags:
+  - warm
+  artifacts:
+    paths:
+    - build/
+    expire_in: 1 week
+  only:
+   - master
+  script:
+   - gulp build -production
+
+deploy:
+  image: registry.gitlab.com/warm-soft/docker-deploy-image/master
+  stage: deploy
+  tags:
+    - warm
+  script:
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+
+    - docker-compose down -v
+    - docker-compose rm -f
+    - docker-compose build --no-cache
+    - docker-compose up -d --remove-orphans --build
+  only:
+    - master

@@ -1,0 +1,72 @@
+.collapsible-closed [data-collapsible-body] {
+  height: 0 !important; }
+
+[data-collapsible-body] {
+  overflow: hidden;
+  transition: height 0.3s; }
+
+.accordion {
+  margin-bottom: 40px;
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Gilroy-Medium, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  h3 button {
+    all: inherit;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px 0;
+    border-top: 1px solid $cMediumGrey;
+    background: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.accordion__section {
+  border-bottom: 1px solid $cMediumGrey;
+  + .accordion__section {
+    margin-top: 40px;
+  }
+  &.collapsible-opened {
+    .accordion__icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.accordion__section--expanded {
+  .accordion__content {
+    display: block;
+  }
+  .accordion__icon {
+    transform: rotate(180deg);
+  }
+}
+
+.accordion__trigger {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion__icon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color .3s, transform .3s, border-color .3s;
+  transform-origin: 50% 50%;
+  transform: rotate(0deg);
+  font-size: 12px;
+}
+
+.accordion__content {
+  padding-bottom: 24px;
+  border-top: 0;
+}
